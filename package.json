@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "chalk": "^4.1.2"
+    "chalk": "^4.1.2",
+    "inquirer": "^8.1.2"
   },
   "name": "revisao_node.js_do-zero_a-_maestria_com_diversos_projetos",
   "version": "1.0.0",
   "description": "Este repositório contém os códigos e projetos desenvolvidos no curso completo de **Node.js do Zero à Maestria**, ministrado pelo instrutor Matheus Battisti.",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
