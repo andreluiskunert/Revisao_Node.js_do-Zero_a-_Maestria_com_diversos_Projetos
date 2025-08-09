@@ -12,6 +12,6 @@
   "description": "",
   "dependencies": {
     "chalk": "^5.5.0",
-    "inquirer": "^12.9.1"
+    "inquirer": "^8.2.4"
   }
 }
