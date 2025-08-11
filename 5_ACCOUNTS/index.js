@@ -104,7 +104,7 @@ function deposit() {
         .prompt([
           {
             name: 'amount',
-            message: 'Quanto você deseja depositar?',
+            message: 'Quanto você deseja deposita?'
           },
         ])
         .then((answer) => {
