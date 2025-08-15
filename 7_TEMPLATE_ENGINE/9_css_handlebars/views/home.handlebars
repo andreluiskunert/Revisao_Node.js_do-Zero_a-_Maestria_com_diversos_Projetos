@@ -1,0 +1,17 @@
+ <h1> OLa handlebars</h1>
+ <p>Alguns textos </p>
+ <p>Meu nome é {{user.name}} {{user.surname}}, tenho {{user.age}} anos ,sou {{user.profissao}};</p>
+ <p>
+    meu pensamento " {{palavra}}  ".
+ </p>
+ {{#if approved}}
+   <p> Parabéns seu cadastro foi aprovado!!!</p>
+   {{else}}
+   <p>O seu cadastro necessita de aprovação para ter acesso total no sitemas!!!</p>
+ {{/if}}
+ {{#if auth}}
+   <p>
+      Você está autenticado <a href="/dashboard">clique aqui</a>  pra acessar a área de menbros
+   </p>
+ {{/if}}
+ <marquee> Layout com handlebars </marquee>

@@ -11,7 +11,7 @@ const hbs = exphbs.create({
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.set('views', './views');
-
+app.use(express.static('public'))
 // Rotas
 app.get("/dashboard", (req, res) => {
   const items = ["Item a", "Item b", "Item c"];
