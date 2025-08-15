@@ -10,6 +10,16 @@ app.get("/dashboard", (req, res)=>{
   const items = ["Item a", "Item b", "Item c"]
   res.render('dashboard', {items})
 })
+app.get('/post', (req, res)=>{
+  const post = {
+    title: 'Aprender Node.js',
+    category: 'JavaScript',
+    body: 'Este artigo vai te ajudar a aprender Node.js',
+    comments:4,
+  }
+  res.send('blogpost', {post})
+
+})
 
 app.get('/', (req, res) => {
 

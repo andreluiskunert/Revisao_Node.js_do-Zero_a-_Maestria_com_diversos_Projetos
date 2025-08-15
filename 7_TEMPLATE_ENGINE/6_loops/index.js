@@ -7,8 +7,7 @@ app.engine('handlebars', engine()); // <- Usa engine()
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 app.get("/dashboard", (req, res)=>{
-  const items = ["Item a", "Item b", "Item c"]
-  res.render('dashboard', {items})
+  res.render('dashboard')
 })
 
 app.get('/', (req, res) => {
