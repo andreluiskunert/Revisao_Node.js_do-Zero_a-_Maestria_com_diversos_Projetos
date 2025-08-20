@@ -1,0 +1,87 @@
+# ===========================
+# PRINCIPAIS COMANDOS MySQL
+# ===========================
+
+# 1. Entrar no MySQL
+mysql -u root -p         # login como root com senha
+mysql -u usuario -p       # login como outro usuário
+
+# 2. Mostrar bancos de dados
+SHOW DATABASES;
+
+# 3. Criar um banco de dados
+CREATE DATABASE nome_do_banco;
+
+# 4. Usar um banco de dados
+USE nome_do_banco;
+
+# 5. Apagar um banco de dados
+DROP DATABASE nome_do_banco;
+
+# 6. Criar uma tabela
+CREATE TABLE nome_tabela (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50),
+    idade INT
+);
+
+# 7. Mostrar tabelas do banco atual
+SHOW TABLES;
+
+# 8. Mostrar estrutura da tabela
+DESCRIBE nome_tabela;
+EXPLAIN nome_tabela;
+
+# 9. Inserir dados
+INSERT INTO nome_tabela (nome, idade) VALUES ('André', 25);
+INSERT INTO nome_tabela VALUES (NULL, 'Maria', 30);  # NULL para auto_increment
+
+# 10. Consultar dados
+SELECT * FROM nome_tabela;
+SELECT nome, idade FROM nome_tabela WHERE idade > 20;
+SELECT * FROM nome_tabela ORDER BY idade DESC;
+
+# 11. Atualizar dados
+UPDATE nome_tabela SET idade = 26 WHERE nome = 'André';
+
+# 12. Apagar dados
+DELETE FROM nome_tabela WHERE nome = 'Maria';
+TRUNCATE TABLE nome_tabela;  # apaga todos os registros
+
+# 13. Adicionar coluna
+ALTER TABLE nome_tabela ADD COLUMN email VARCHAR(100);
+
+# 14. Modificar coluna
+ALTER TABLE nome_tabela MODIFY COLUMN idade SMALLINT;
+
+# 15. Apagar coluna
+ALTER TABLE nome_tabela DROP COLUMN email;
+
+# 16. Criar usuário
+CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'senha';
+
+# 17. Conceder privilégios
+GRANT ALL PRIVILEGES ON nome_do_banco.* TO 'usuario'@'localhost';
+FLUSH PRIVILEGES;
+
+# 18. Apagar usuário
+DROP USER 'usuario'@'localhost';
+
+# 19. Exportar banco (backup)
+mysqldump -u root -p nome_do_banco > backup.sql
+
+# 20. Importar banco
+mysql -u root -p nome_do_banco < backup.sql
+
+# 21. Sair do MySQL
+exit;
+
+# ===========================
+# FIM DOS COMANDOS PRINCIPAIS
+# ===========================
+O software Workbench será utilizado no curso para visualização de bancos de dados, tabelas, dados e consultas SQL, além de permitir criar diagramas relacionais. Ele é completo e facilita o aprendizado do SQL, embora o terminal ou código puro ainda seja essencial para prática real.
+
+Para instalar, abra o navegador, pesquise “Workbench”, acesse o link oficial e baixe a versão adequada para seu sistema operacional (Windows, Mac ou Linux). Existem versões completas e menores. A instalação é simples, pode incluir atualização de softwares e samples (dados de exemplo) para prática.
+
+Após instalar, abra o Workbench pelo Menu Iniciar. Ele permitirá visualizar bancos, tabelas, dados e executar comandos SQL em tempo real, auxiliando no aprendizado didático. Mesmo com Workbench, o curso enfatiza a importância do uso do terminal ou código em aplicações reais. É possível usar outras ferramentas, mas o foco será no Workbench para acompanhamento visual.
+
