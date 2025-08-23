@@ -24,24 +24,6 @@ app.get('/', function (req, res) {
   res.render('home')
 })
 
-app.get('/users/create', function (req, res) {
-  res.render('adduser')
-})
-
-app.post('/users/create', function (req, res) {
-  const name = req.body.name
-  const occupation = req.body.occupation
-  let newsletter = req.body.newsletter
-
-  if (newsletter === 'on') {
-    newsletter = true
-  }
-
-  User.create({ name, occupation, newsletter })
-
-  res.redirect('/')
-})
-
 // Criar tabelas e rodar o app
 conn
   .sync()

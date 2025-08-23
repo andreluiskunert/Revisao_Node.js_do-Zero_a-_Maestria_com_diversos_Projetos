@@ -43,8 +43,8 @@ app.post('/users/create', function (req, res) {
   }
 
   User.create({ name, occupation, newsletter })
-
-  res.redirect('/')
+    .then(res.redirect('/'))
+    .catch((err) => console.log(err))
 })
 
 app.get('/users/:id', function (req, res) {
@@ -59,6 +59,20 @@ app.get('/users/:id', function (req, res) {
     .then((user) => {
       console.log(user)
       res.render('userview', { user })
+    })
+    .catch((err) => console.log(err))
+})
+
+app.post('/users/delete/:id', function (req, res) {
+  const id = req.params.id
+
+  User.destroy({
+    where: {
+      id: id,
+    },
+  })
+    .then((user) => {
+      res.redirect('/')
     })
     .catch((err) => console.log(err))
 })
