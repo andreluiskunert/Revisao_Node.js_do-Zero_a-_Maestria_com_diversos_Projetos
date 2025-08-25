@@ -1,0 +1,141 @@
+/* Fonte mais moderna */
+* {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar estilizada */
+#navbar {
+  background: #004085;
+  color: white;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2em;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  color: #333;
+}
+
+/* Formulário */
+.form {
+  width: 450px;
+  margin: 0 auto;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-control label {
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+.form-control input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Grid dos cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 15px;
+  justify-content: center;
+}
+
+.container .item {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 280px;
+  max-width: 300px;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.container .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.container .item h2 {
+  margin-bottom: 0.5em;
+  color: #004085;
+}
+
+.container .item p {
+  margin-bottom: 1em;
+  color: #555;
+}
+
+/* Botões */
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions a,
+.actions input {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.actions .details-btn {
+  border-color: #004085;
+  color: #004085;
+}
+
+.actions .delete-btn {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.actions a:hover,
+.actions input:hover {
+  background: #f1f1f1;
+}
