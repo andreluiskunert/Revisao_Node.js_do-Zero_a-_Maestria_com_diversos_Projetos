@@ -82,7 +82,11 @@ console.log(users)
   res.render('home', {users: users})
 })
 
-conn.sync().then(() =>{
+conn
+.sync()
+// .sync({force: true})
+
+  .then(() =>{
   app.listen(3000)
-})
+}).catch((err) =>console.log(err))
 
