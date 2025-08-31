@@ -1,33 +1,21 @@
-const express = require("express");
-const exphbs = require("express-handlebars");
-const session = require("express-session");
-const FileStore = require("session-file-store")(session);
+const express = require('express');
+const { engine } = require('express-handlebars'); // <--- versão nova
+const session = require('express-session');
+const FileStore = require('session-file-store')(session);
 const flash = require("express-flash");
 
 const app = express();
-
 const conn = require("./db/conn");
 
-// Models
-const Tought = require("./models/Tought");
+// Configuração do Handlebars
+app.engine('handlebars', engine());
+app.set('view engine', 'handlebars');
 
-// routes
-const toughtsRoutes = require("./routes/toughtsRoutes");
-const authRoutes = require("./routes/authRoutes");
-const ToughController = require("./controllers/ToughtController");
-
-app.engine("handlebars", exphbs());
-app.set("view engine", "handlebars");
-
-app.use(
-  express.urlencoded({
-    extended: true,
-  })
-);
-
+// Middlewares
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//session middleware
+// Configuração de sessão
 app.use(
   session({
     name: 'session',
@@ -40,35 +28,31 @@ app.use(
     }),
     cookie: {
       secure: false,
-      maxAge: 3600000,
-      expires: new Date(Date.now() + 3600000),
+      maxAge: 360000,
+      expires: new Date(Date.now() + 360000),
       httpOnly: true,
     },
-  }),
-)
+  })
+);
 
-// flash messages
+// Flash messages
 app.use(flash());
 
+// Servir arquivos estáticos
 app.use(express.static("public"));
 
-// set session to res
+// Disponibilizar sessão para as views
 app.use((req, res, next) => {
-  // console.log(req.session)
-  console.log(req.session.userid);
-
   if (req.session.userid) {
     res.locals.session = req.session;
   }
-
   next();
 });
 
-
-
+// Conexão com o banco
 conn
   .sync()
   .then(() => {
-    app.listen(3000);
+    app.listen(3000, () => console.log("Servidor rodando em http://localhost:3000"));
   })
   .catch((err) => console.log(err));
