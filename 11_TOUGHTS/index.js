@@ -6,7 +6,9 @@ const flash = require("express-flash");
 
 const app = express();
 const conn = require("./db/conn");
-
+// models
+const Tought = require('./models/Tought')
+const User = require('./models/User')
 // Configuração do Handlebars
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -18,21 +20,23 @@ app.use(express.json());
 // Configuração de sessão
 app.use(
   session({
-    name: 'session',
-    secret: 'nosso_secret',
+    name: "session",
+    secret: "nosso_secret",
     resave: false,
     saveUninitialized: false,
     store: new FileStore({
-      logFn: function () {},
-      path: require('path').join(require('os').tmpdir(), 'sessions'),
+      logFn: function(){},
+    path: require('path').join(require('os').tmpdir(), 'sessions'),
+
     }),
-    cookie: {
+    cookie:{
       secure: false,
-      maxAge: 360000,
-      expires: new Date(Date.now() + 360000),
-      httpOnly: true,
-    },
-  })
+      maxAge:360000,
+      expires: new Date(Date.now() + 36000),
+      httpOnly: true
+    }
+
+  }),
 );
 
 // Flash messages
@@ -51,6 +55,7 @@ app.use((req, res, next) => {
 
 // Conexão com o banco
 conn
+  // .sync({force: true})
   .sync()
   .then(() => {
     app.listen(3000, () => console.log("Servidor rodando em http://localhost:3000"));
