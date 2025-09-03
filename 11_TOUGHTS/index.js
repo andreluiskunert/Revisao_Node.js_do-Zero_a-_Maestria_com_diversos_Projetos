@@ -7,57 +7,66 @@ const flash = require("express-flash");
 const app = express();
 const conn = require("./db/conn");
 // models
-const Tought = require('./models/Tought')
-const User = require('./models/User')
-// Configuração do Handlebars
-app.engine('handlebars', engine());
-app.set('view engine', 'handlebars');
+const toughtsRoutes = require("./routes/toughtsRoutes");
+const authRoutes = require("./routes/authRoutes");
+const ToughController = require("./controllers/ToughtController");
 
-// Middlewares
-app.use(express.urlencoded({ extended: true }));
+app.engine("handlebars", exphbs());
+app.set("view engine", "handlebars");
+
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+
 app.use(express.json());
 
-// Configuração de sessão
+//session middleware
 app.use(
   session({
-    name: "session",
-    secret: "nosso_secret",
+    name: 'session',
+    secret: 'nosso_secret',
     resave: false,
     saveUninitialized: false,
     store: new FileStore({
-      logFn: function(){},
-    path: require('path').join(require('os').tmpdir(), 'sessions'),
-
+      logFn: function () {},
+      path: require('path').join(require('os').tmpdir(), 'sessions'),
     }),
-    cookie:{
+    cookie: {
       secure: false,
-      maxAge:360000,
-      expires: new Date(Date.now() + 36000),
-      httpOnly: true
-    }
-
+      maxAge: 3600000,
+      expires: new Date(Date.now() + 3600000),
+      httpOnly: true,
+    },
   }),
-);
+)
 
-// Flash messages
+// flash messages
 app.use(flash());
 
-// Servir arquivos estáticos
 app.use(express.static("public"));
 
-// Disponibilizar sessão para as views
+// set session to res
 app.use((req, res, next) => {
+  // console.log(req.session)
+  console.log(req.session.userid);
+
   if (req.session.userid) {
     res.locals.session = req.session;
   }
+
   next();
 });
 
-// Conexão com o banco
+app.use("/toughts", toughtsRoutes);
+app.use("/", authRoutes);
+
+app.get("/", ToughController.showToughts);
+
 conn
-  // .sync({force: true})
   .sync()
   .then(() => {
-    app.listen(3000, () => console.log("Servidor rodando em http://localhost:3000"));
+    app.listen(3000);
   })
   .catch((err) => console.log(err));
