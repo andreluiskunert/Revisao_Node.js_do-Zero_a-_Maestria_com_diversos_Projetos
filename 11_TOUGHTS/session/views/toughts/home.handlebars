@@ -1,1 +1,13 @@
-<h1> Todos Pensamentos... </h1>
+<h1>Bem-vindo ao Toughts 💭</h1>
+
+{{#if toughts.length}}
+  <ul>
+    {{#each toughts}}
+      <li>
+        <strong>{{this.title}}</strong> - {{this.description}}
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>Nenhum pensamento cadastrado ainda.</p>
+{{/if}}

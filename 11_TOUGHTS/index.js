@@ -1,19 +1,24 @@
 const express = require('express');
-const { engine } = require('express-handlebars'); // <--- versão nova
 const session = require('express-session');
 const FileStore = require('session-file-store')(session);
-const flash = require("express-flash");
+const flash = require('express-flash');
+const { engine } = require('express-handlebars');
 
 const app = express();
-const conn = require("./db/conn");
-// models
-const toughtsRoutes = require("./routes/toughtsRoutes");
-const authRoutes = require("./routes/authRoutes");
-const ToughController = require("./controllers/ToughtController");
+const conn = require('./db/conn');
 
-app.engine("handlebars", exphbs());
-app.set("view engine", "handlebars");
+// Controllers
+const ToughtController = require('./controllers/ToughtController');
 
+// Routes
+const toughtsRoutes = require('./routes/toughtsRoutes');
+const authRoutes = require('./routes/authRoutes');
+
+// Handlebars
+app.engine('handlebars', engine());
+app.set('view engine', 'handlebars');
+
+// Middlewares
 app.use(
   express.urlencoded({
     extended: true,
@@ -22,7 +27,7 @@ app.use(
 
 app.use(express.json());
 
-//session middleware
+// Session middleware
 app.use(
   session({
     name: 'session',
@@ -39,17 +44,17 @@ app.use(
       expires: new Date(Date.now() + 3600000),
       httpOnly: true,
     },
-  }),
-)
+  })
+);
 
-// flash messages
+// Flash messages
 app.use(flash());
 
-app.use(express.static("public"));
+// Public folder
+app.use(express.static('public'));
 
-// set session to res
+// Set session to response
 app.use((req, res, next) => {
-  // console.log(req.session)
   console.log(req.session.userid);
 
   if (req.session.userid) {
@@ -59,14 +64,17 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/toughts", toughtsRoutes);
-app.use("/", authRoutes);
+// Routes
+app.use('/toughts', toughtsRoutes);
+app.use('/', authRoutes);
 
-app.get("/", ToughController.showToughts);
+// Home
+app.get('/', ToughtController.showToughts);
 
+// DB connection
 conn
   .sync()
   .then(() => {
-    app.listen(3000);
+    app.listen(3000, () => console.log('Servidor rodando na porta 3000 🚀'));
   })
   .catch((err) => console.log(err));
