@@ -12,7 +12,9 @@ const conn = require("./db/conn");
 // Models
 const Tought = require("./models/Tought");
 const User = require("./models/User"); // sem espaço no final
-
+// Import Routes
+const toughtsRoutes = require('./routes/toughtsRoutes');
+const ToughtsController = require("./controllers/ToughtsController");
 // View engine
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
@@ -53,6 +55,9 @@ app.use((req, res, next) => {
   }
   next();
 });
+// Routes
+app.use("/toughts", toughtsRoutes)
+app.get('/', ToughtsController.showToughts)
 
 // Conexão DB e start
 conn
