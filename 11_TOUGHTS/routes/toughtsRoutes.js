@@ -1,7 +1,7 @@
-const express = require('express')
-const router = express.Router()
-// Controller
-const ToughtController = require('../controllers')
-router.get('/', ToughtsController.showToughts)
+const express = require('express');
+const router = express.Router();
+const ToughtsController = require('../controllers/ToughtsController');
 
-module.exports = router
+router.get('/', ToughtsController.showToughts);
+
+module.exports = router;
