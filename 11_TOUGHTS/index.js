@@ -6,10 +6,51 @@ const flash = require('express-flash')
 const app = express()
 
 const conn = require('./db/conn')
+// model
+const Tought = require('./models/Tought')
+const User = require('./models/User')
 // 2ª parte de estruturação
 app.engine('handlebars', exphbs())
 app.set('view engine', 'handlebars')
+//
+app.use(
+  express.urlencoded({
+    extended: true
+  })
+
+) 
+ app.use(express.json())
+ //
+ app.use(
+   session({
+    name: "session",
+    secret: "nosso_secret",
+    resave: false,
+    saveUninitialized: false,
+    store: new fileStore({
+      logFn: function () {},
+      path: require('path').join(require('os').tmpdir(), 'session'),
+    }),
+    cookie: {
+      secure: false,
+      maxAge: 360000,
+      expires: new Date(Date.now() + 36000),
+      httpOnly: true
+    }
+   })
+ )
+ app.use(flash())
+ //
+ app.use(express.static('public'))
+ //
+ app.use((req, res, next) =>{
+   if(req.session.userid) {
+     res.locals.session = req.session
+   }
+   next()
+ })
 conn
+  // .sync({ force: true})
   .sync()
   .then(() =>{
     app.listen(3000)
