@@ -6,28 +6,22 @@ const flash = require('express-flash')
 const app = express()
 
 const conn = require('./db/conn')
-// model
 const Tought = require('./models/Tought')
 const User = require('./models/User')
-// import Routes
 const toughtsRoutes = require('./routes/toughtsRoutes')
-
 const ToughtController = require('./controllers/ToughtController')
 
-// 2ª parte de estruturação
-app.engine('handlebars', exphbs())
+// Configuração do Handlebars (versão 6.x)
+app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
-//
-app.use(
-  express.urlencoded({
-    extended: true
-  })
+app.set('views', './views')
 
-) 
- app.use(express.json())
- //
- app.use(
-   session({
+// middlewares
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+
+app.use(
+  session({
     name: "session",
     secret: "nosso_secret",
     resave: false,
@@ -42,25 +36,26 @@ app.use(
       expires: new Date(Date.now() + 36000),
       httpOnly: true
     }
-   })
- )
- app.use(flash())
- //
- app.use(express.static('public'))
- //
- app.use((req, res, next) =>{
-   if(req.session.userid) {
-     res.locals.session = req.session
-   }
-   next()
- })
- // routes
- app.use('/toughts', toughtsRoutes)
- app.get('/', ToughtController.showToughts)
-conn
-  // .sync({ force: true})
-  .sync()
-  .then(() =>{
-    app.listen(3000)
   })
+)
+
+app.use(flash())
+app.use(express.static('public'))
+
+app.use((req, res, next) => {
+  if (req.session.userid) {
+    res.locals.session = req.session
+  }
+  next()
+})
+
+// rotas
+app.use('/toughts', toughtsRoutes)
+app.get('/', ToughtController.showToughts)
+
+// conexão com banco
+conn
+  //.sync({ force: true })
+  .sync()
+  .then(() => app.listen(3000))
   .catch((err) => console.log(err))
