@@ -9,6 +9,8 @@ const conn = require('./db/conn')
 const Tought = require('./models/Tought')
 const User = require('./models/User')
 const toughtsRoutes = require('./routes/toughtsRoutes')
+const authRoutes = require('./routes/authRoutes')
+
 const ToughtController = require('./controllers/ToughtController')
 
 // Configuração do Handlebars (versão 6.x)
@@ -51,7 +53,10 @@ app.use((req, res, next) => {
 
 // rotas
 app.use('/toughts', toughtsRoutes)
+app.get('/', authRoutes)
 app.get('/', ToughtController.showToughts)
+
+
 
 // conexão com banco
 conn
