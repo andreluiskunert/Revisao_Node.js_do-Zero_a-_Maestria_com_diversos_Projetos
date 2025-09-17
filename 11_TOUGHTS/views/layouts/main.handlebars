@@ -21,6 +21,10 @@
          </ul>
     </nav>
     <div class="container">
+        <!-- mensagens -->
+        {{#if messages.message}}
+        {{messages.message}}
+        {{/if}}
          {{ body }}
     </div>
    <footer>
