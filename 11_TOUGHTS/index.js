@@ -14,9 +14,12 @@ const authRoutes = require("./routes/authRoutes");
 const ToughtController = require('./controllers/ToughtController')
 
 // Configuração do Handlebars (versão 6.x)
+const path = require('path')
+
+// Configuração do Handlebars (versão 6.x)
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
-app.set('views', './views')
+app.set('views', path.join(__dirname, 'views'))
 
 // middlewares
 app.use(express.urlencoded({ extended: true }))
@@ -60,7 +63,7 @@ app.get('/', ToughtController.showToughts)
 
 // conexão com banco
 conn
-  //.sync({ force: true })
-  .sync()
+  .sync({ force: true })
+  // .sync()
   .then(() => app.listen(3000))
   .catch((err) => console.log(err))
