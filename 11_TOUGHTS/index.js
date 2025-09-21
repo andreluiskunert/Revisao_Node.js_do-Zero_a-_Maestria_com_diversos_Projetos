@@ -8,13 +8,14 @@ const app = express()
 const conn = require('./db/conn')
 const Tought = require('./models/Tought')
 const User = require('./models/User')
-const toughtsRoutes = require('./routes/toughtsRoutes')
+const toughtsRoutes = require("./routes/toughtsRoutes");
 const authRoutes = require("./routes/authRoutes");
-
+const ToughController = require("./controllers/ToughtController");
 const ToughtController = require('./controllers/ToughtController')
 
 // Configuração do Handlebars (versão 6.x)
 const path = require('path')
+
 
 // Configuração do Handlebars (versão 6.x)
 app.engine('handlebars', exphbs.engine())
