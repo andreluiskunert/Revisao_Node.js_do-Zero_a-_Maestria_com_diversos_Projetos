@@ -8,6 +8,7 @@ const Tought = db.define("Tought", {
   title: {
     type: DataTypes.STRING,
     allowNull: false,
+    require: true 
   },
 });
 
