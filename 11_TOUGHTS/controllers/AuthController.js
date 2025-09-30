@@ -24,7 +24,7 @@ module.exports = class AuthController {
     // Validação de senha
     if(password != confirmpassword){
       req.flash('message', 'As senhas estão erradas')
-      res.render('auth/register')
+      res.render('/register')
 
       return
     }
