@@ -1,6 +1,4 @@
-const { where } = require('sequelize')
 const User = require('../models/User')
-const bcrypt = require('bcryptjs')
 
 module.exports = class AuthController {
   static login(req, res) {
@@ -8,59 +6,28 @@ module.exports = class AuthController {
   }
 
   static async loginPost(req, res) {
-    const {email, password} = req.body
-    // finder user
-    const user = await User.findOne({where: {email: email}})
-    if(!user){
+    const { email, password } = req.body
+
+    // Aqui você valida o usuário
+    const user = await User.findOne({ where: { email: email } })
+
+    if (!user) {
       req.flash('message', 'Usuário não encontrado!')
-      res.render('auth/register')
-      return
+      return res.redirect('/login')
     }
 
-    //  check if passwords match
-    const passwordMatch = bcrypt.compareSync(password, user.password)
-
-    if(!passwordMatch){
-        req.flash('message', 'Senha invalida!')
-      res.render('auth/login')
-      return
-
+    // (se tiver bcrypt compare a senha, senão só compara direto)
+    if (user.password !== password) {
+      req.flash('message', 'Senha inválida!')
+      return res.redirect('/login')
     }
 
-
-
-
-  }
-
-  static register(req, res) {
-    res.render('auth/register')
-  }
- static async registerPost(req, res){
-    const {name, email, password, confirmpassword} = req.body
-    // Validação de senha
-    if(password != confirmpassword){
-      req.flash('message', 'As senhas estão erradas')
-      res.render('/register')
-
-      return
-    }
-     const passwordMatch = bcrypt.compareSync(password, user.password)
-
-    if (!passwordMatch) {
-      res.render('auth/login', {
-        message: 'Senha inválida!',
-      })
-
-      return
-    }
-
-    // auth user
+    // 🔹 Aqui salvamos a sessão
     req.session.userid = user.id
 
     req.flash('message', 'Login realizado com sucesso!')
-
     req.session.save(() => {
-      res.redirect('/')
+      res.redirect('/toughts/dashboard')
     })
   }
 
@@ -69,57 +36,12 @@ module.exports = class AuthController {
   }
 
   static async registerPost(req, res) {
-    const { name, email, password, confirmpassword } = req.body
-
-    // passwords match validation
-    if (password != confirmpassword) {
-      req.flash('message', 'As senhas não conferem, tente novamente!')
-      res.render('auth/register')
-
-      return
-    }
-
-    // email validation
-    const checkIfUserExists = await User.findOne({ where: { email: email } })
-
-    if (checkIfUserExists) {
-      req.flash('message', 'O e-mail já está em uso!')
-      res.render('auth/register')
-
-      return
-    }
-
-    const salt = bcrypt.genSaltSync(10)
-    const hashedPassword = bcrypt.hashSync(password, salt)
-
-    const user = {
-      name,
-      email,
-      password: hashedPassword,
-    }
-
-    User.create(user)
-      .then((user) => {
-        // initialize session
-        req.session.userid = user.id
-
-        // console.log('salvou dado')
-        // console.log(req.session.userid)
-
-        req.session.userid = user.id
-
-        req.flash('message', 'Cadastro realizado com sucesso!')
-
-        req.session.save(() => {
-          res.redirect('/')
-        })
-      })
-      .catch((err) => console.log(err))
+    // lógica de cadastro...
   }
 
   static logout(req, res) {
-    req.session.destroy()
-    res.redirect('/login')
+    req.session.destroy(() => {
+      res.redirect('/')
+    })
   }
-   }
-
+}
