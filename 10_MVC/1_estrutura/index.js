@@ -35,7 +35,7 @@ app.use(
     resave: false,
     saveUninitialized: false,
     store: new FileStore({
-      logFn: function () {},
+      logFn: function () { },
       path: require('path').join(require('os').tmpdir(), 'sessions'),
     }),
     cookie: {
