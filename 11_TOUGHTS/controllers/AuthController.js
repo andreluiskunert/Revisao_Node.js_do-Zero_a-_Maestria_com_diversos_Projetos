@@ -1,8 +1,7 @@
 const User = require('../models/User')
-
 const bcrypt = require('bcryptjs')
 
-module.exports = class UserController {
+module.exports = class AuthController {
   static login(req, res) {
     res.render('auth/login')
   }
@@ -10,33 +9,23 @@ module.exports = class UserController {
   static async loginPost(req, res) {
     const { email, password } = req.body
 
-    // find user
+    // exemplo básico de validação
     const user = await User.findOne({ where: { email: email } })
-
     if (!user) {
-      res.render('auth/login', {
-        message: 'Usuário não encontrado!',
-      })
-
+      req.flash('message', 'Usuário não encontrado!')
+      res.redirect('/login')
       return
     }
 
-    // compare password
     const passwordMatch = bcrypt.compareSync(password, user.password)
-
     if (!passwordMatch) {
-      res.render('auth/login', {
-        message: 'Senha inválida!',
-      })
-
+      req.flash('message', 'Senha incorreta!')
+      res.redirect('/login')
       return
     }
 
-    // auth user
     req.session.userid = user.id
-
-    req.flash('message', 'Login realizado com sucesso!')
-
+    req.flash('message', 'Autenticação realizada com sucesso!')
     req.session.save(() => {
       res.redirect('/')
     })
@@ -49,21 +38,17 @@ module.exports = class UserController {
   static async registerPost(req, res) {
     const { name, email, password, confirmpassword } = req.body
 
-    // passwords match validation
-    if (password != confirmpassword) {
-      req.flash('message', 'As senhas não conferem, tente novamente!')
-      res.render('auth/register')
-
+    if (password !== confirmpassword) {
+      req.flash('message', 'As senhas não conferem!')
+      res.redirect('/register')
       return
     }
 
-    // email validation
     const checkIfUserExists = await User.findOne({ where: { email: email } })
 
     if (checkIfUserExists) {
       req.flash('message', 'O e-mail já está em uso!')
-      res.render('auth/register')
-
+      res.redirect('/register')
       return
     }
 
@@ -76,23 +61,17 @@ module.exports = class UserController {
       password: hashedPassword,
     }
 
-    User.create(user)
-      .then((user) => {
-        // initialize session
-        req.session.userid = user.id
+    try {
+      const createdUser = await User.create(user)
 
-        // console.log('salvou dado')
-        // console.log(req.session.userid)
-
-        req.session.userid = user.id
-
-        req.flash('message', 'Cadastro realizado com sucesso!')
-
-        req.session.save(() => {
-          res.redirect('/')
-        })
+      req.session.userid = createdUser.id
+      req.flash('message', 'Cadastro realizado com sucesso!')
+      req.session.save(() => {
+        res.redirect('/')
       })
-      .catch((err) => console.log(err))
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   static logout(req, res) {
