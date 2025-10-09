@@ -1,0 +1,143 @@
+Então galera vou aproveitar quem criou o formulário aqui de pensamentos e fazer a inserção desses caras
+
+no sistema.
+
+Vamos ver como é que a gente vai desenvolver isso agora.
+
+Bora aqui eu vou ter que primeiramente criar uma rota porque como a gente bem sabe a gente tem a rota
+
+de chegar no formulário mas ainda tem a rota de pouso ainda.
+
+Então vou abrir aqui o nosso arquivo de Thoughts Out onde a gente tem Syed aqui de Get.
+
+Agora vou ter um Ed também ID ou site aqui que pode ter um script Out 6 e ele tem que ficar o check
+
+in porque é uma rota protegida.
+
+Dá tudo certo aqui.
+
+Isso indica que a gente não tem essa função não esquecer de ligar o banco de dados esquece que tem criticado
+
+o sistema porque trabalha aqui nessa área protegida digamos assim está de uma série de pré requisitos
+
+para chegar o único.
+
+Aí galera que eu vou fazer então vou criar primeiramente essa função Cristal sem fio então pode ser
+
+embaixo do nosso cristal.
+
+A seletiva tem que ser assíncrona porque a gente está utilizando o banco de dados então vai esperar
+
+uma resposta então tenho que assim que criei tal desejo.
+
+Os dados vêm do blog.
+
+A gente pode pegar todos eles e separar as variáveis ou criar diretamente nosso objeto touch para depois
+
+inseri lo no banco em uma variável perigosa ou criar um objeto já puxando tudo o que vem lá do nosso
+
+Frontini melhor ficar Taito igual a Taito.
+
+Eu preciso só dizer que para criar teoricamente mas a gente sabe que a gente tem a questão do aval do
+
+usuário então vou ter que colocar que também quem use a aí a conta criada assim decide no banco então
+
+ele vai seguir a mesma nomenclatura para conseguir encontrar.
+
+Isso é bem importante essa agora ele pode deixar o valor vazio lá.
+
+Então coloquem exatamente como ficou o Banco de vocês na tabela.
+
+A gente vai ser o que bem para ver também.
+
+E onde é que eu vou pegar esse cara aqui.
+
+Bom eu poderia colocar aqui um formulário mas isso é que permitiria colocar o navio em dia aqui no depois
+
+que um usuário colocasse ali de alguém maliciosamente criasse um pensamento de outra pessoa apegada
+
+a onde está a própria sessão.
+
+Aí estaremos mais protegidos né.
+
+E o certo também seria até fazer uma checagem se o usuário realmente existe mas ficaria mais segurança
+
+não confia tanto diz a seção.
+
+Fazer uma checagem antes da.
+
+Eu vou dar um toque de cliente aqui já vou utilizar o iPad para poder esperar esse pensamento ser criado.
+
+O take without.
+
+é assim que ele tivesse pensamento em renderizar ou melhor direcionar para alguma viu certo.
+
+Porque daí eu vou ter uma missão esse de sessão e tudo mais.
+
+Ele pode fazer isso reflecte o que há mestres com pensamento criado com sucesso.
+
+E aqui a gente vai redirecionar para uma URL específica.
+
+Não vai ser talvez Barradas tanto como aqui quando a gente está redirecionando a Flash Message.
+
+Eu também preciso garantir que a sessão seja salva.
+
+Então para o receber eu tenho como só salvar a mensagem da sessão.
+
+Agora como gente fez aqui no alvo controle onde render a ele funciona mais o Direct preciso garantir
+
+o seguinte Como é que faz isso dar um up Session sabe o que faz frase nada mais é do que algo na seção
+
+garante que a sessão foi salva e redirecionado e ainda pode colocar isso aqui dentro outra caixa para
+
+eu poder ver se há algum erro que na minha lógica é esse que fica na nossa logo.
+
+Eu.
+
+Eu poderia até usar esse padrão que eu fiz aqui no.
+
+Cash.
+
+Essa é a premissa que poderia colocar algo melhor por exemplo.
+
+Aconteceu um erro.
+
+Dois pontos eu constatei no erro.
+
+Isso aqui é bem interessante para a gente.
+
+Uma aplicação profissional teria que ter algo que não move mais seria mais interessante pra gente finalizar
+
+para todas as arestas é porque a gente quer formar e ser o que deu provimento à aplicação para algum
+
+deve poder dar uma continuidade nisso fazer a manutenção de estar embora ver conceito saudado com as
+
+informações aqui tanto que talvez eu vou simplesmente recarregar viu aqui está agora.
+
+Meu primeiro pensamento é que vou criar aqui vamos ver acontece especialmente criado com sucesso.
+
+Mas como não tenho uma forma de ver aqui na aplicação esse que será nosso próximo passo.
+
+Eu acho melhor a gente pegar lá no banco nos que bem e ver se o dado caiu mesmo porque aí é gente garante
+
+100 por cento os que vêm aqui.
+
+E aqui no nosso banco de dados eu vou abrir e selecionar a tabela de tópicos e realmente eu estou brincando
+
+meu título e o é o de escrita e garantia então como falei antes aquele que a te colocou no objeto que
+
+tendo isso aqui se a gente pode até bater também pode do usuário eu tenho que o Matheus aí de sete foi
+
+exatamente o que eu criei.
+
+Por tudo certo e pelo usuário correto.
+
+A gente também está cadastrando o pensamento do sistema para a próxima etapa que é poder exibir isso
+
+aqui é o pensamento.
+
+Assim que ele é criado para usuário que cria pensamentos consegui ver que deu certo o sistema dele vai
+
+deixar aqui uma caixa de Pandora ele conseguia abrir e agora então vai ter que completar 10 pra cima
+
+ele vai listar os pensamentos aqui fazendo select do banco bora lá.
