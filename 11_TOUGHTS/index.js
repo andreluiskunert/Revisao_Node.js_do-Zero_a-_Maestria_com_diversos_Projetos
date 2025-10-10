@@ -1,91 +1,87 @@
-// ========================
-// 📦 Importações
-// ========================
-const express = require('express')
-const exphbs = require('express-handlebars')
-const session = require('express-session')
-const fileStore = require('session-file-store')(session)
-const flash = require('express-flash')
-const path = require('path')
+const express = require("express");
+const { engine } = require("express-handlebars"); // ✅ forma correta para versões novas
+const session = require("express-session");
+const FileStore = require("session-file-store")(session);
+const flash = require("express-flash");
 
-const app = express()
+const app = express();
 
-// ========================
-// 📂 Conexão e modelos
-// ========================
-const conn = require('./db/conn')
-const Tought = require('./models/Tought')
-const User = require('./models/User')
+const conn = require("./db/conn");
 
-// ========================
-// 📂 Rotas e controladores
-// ========================
-const toughtsRoutes = require('./routes/toughtsRoutes')
-const authRoutes = require('./routes/authRoutes')
-const ToughtController = require('./controllers/ToughtController')
+// Models
+const Tought = require("./models/Tought");
 
-// ⚠️ Apague esta linha duplicada, ela não é necessária!
-// const ToughController = require("./controllers/ToughtController");
+// Routes
+const toughtsRoutes = require("./routes/toughtsRoutes");
+const authRoutes = require("./routes/authRoutes");
+const ToughController = require("./controllers/ToughtController");
 
-// ========================
-// ⚙️ Configuração do Handlebars
-// ========================
-app.engine('handlebars', exphbs.engine())
-app.set('view engine', 'handlebars')
-app.set('views', path.join(__dirname, 'views'))
+// ✅ Configuração do Handlebars
+app.engine("handlebars", engine({
+  defaultLayout: "main", // layout padrão em /views/layouts/main.handlebars
+  layoutsDir: __dirname + "/views/layouts", // pasta de layouts
+  partialsDir: __dirname + "/views/partials", // pasta de partials
+}));
+app.set("view engine", "handlebars");
+app.set("views", "./views");
 
-// ========================
-// 🔧 Middlewares globais
-// ========================
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
+// ✅ Middlewares
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
 
-// ✅ Middleware de sessão (vem ANTES das rotas)
+app.use(express.json());
+
+// ✅ Configuração da sessão
 app.use(
   session({
-    name: 'session',
-    secret: 'nosso_secret',
+    name: "session",
+    secret: "nosso_secret",
     resave: false,
     saveUninitialized: false,
-    store: new fileStore({
-      logFn: function () { },
-      path: require('path').join(require('os').tmpdir(), 'session'),
+    store: new FileStore({
+      logFn: function () {},
+      path: require("path").join(require("os").tmpdir(), "sessions"),
     }),
     cookie: {
       secure: false,
-      maxAge: 360000,
-      expires: new Date(Date.now() + 360000),
+      maxAge: 3600000,
+      expires: new Date(Date.now() + 3600000),
       httpOnly: true,
     },
   })
-)
+);
 
-// Flash messages e pasta pública
-app.use(flash())
-app.use(express.static('public'))
+// ✅ Flash messages
+app.use(flash());
 
-// ✅ Middleware para expor a sessão à view
+// ✅ Arquivos estáticos (CSS, JS, imagens)
+app.use(express.static("public"));
+
+// ✅ Middleware para enviar sessão às views
 app.use((req, res, next) => {
+  console.log(req.session.userid);
+
   if (req.session.userid) {
-    res.locals.session = req.session
+    res.locals.session = req.session;
   }
-  next()
-})
 
-// ========================
-// 🚏 Rotas
-// ========================
-app.use('/toughts', toughtsRoutes)
-app.use('/', authRoutes)
-app.get('/', ToughtController.showToughts)
+  next();
+});
 
-// ========================
-// 🗄️ Conexão com o banco
-// ========================
-// ⚠️ Use apenas .sync() sem { force: true } depois que estiver funcionando,
-// pois o force:true apaga e recria as tabelas toda vez!
+// ✅ Rotas
+app.use("/toughts", toughtsRoutes);
+app.use("/", authRoutes);
+
+// ✅ Rota principal
+app.get("/", ToughController.showToughts);
+
+// ✅ Conexão com o banco e inicialização do servidor
 conn
-  // .sync({ force: true })
   .sync()
-  .then(() => app.listen(3000))
-  .catch((err) => console.log(err))
+  .then(() => {
+    app.listen(3000, () => console.log("Servidor rodando na porta 3000 🚀"));
+  })
+  .catch((err) => console.log(err));
