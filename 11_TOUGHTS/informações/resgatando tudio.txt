@@ -1,0 +1,121 @@
+Agora a gente está aqui com a homepage.
+
+Os nossos pensamentos em branco que eu vou fazer que eu vou criar um novo usuário vou cadastrar alguns
+
+pensamentos para não ficar só de um contexto de ver essa troca entre eles rapidamente.
+
+Então registrar.
+
+Botequim.
+
+Jurandir.
+
+Jurandir rouba peças com.
+
+A senha para ele cadastrar.
+
+Pequim foi o que alguns pensamentos.
+
+Este é o primeiro pensamento do Jurandir.
+
+Mas eu gostei deste sistema.
+
+Obedece Jurandir frio dois pensamentos.
+
+Agora vamos exibir aqui de uma forma simples todos os pensamentos na Naomi.
+
+Como é que iria fazer isso.
+
+Abre aqui eu vou fechar todos os arquivos.
+
+Vamos começar a trabalhar primeiramente nas fotos a gente já vai ter provavelmente essa rota Barra que
+
+é o método do show tal beleza então aqui eu vou lá em cima deve evitar o show tal só está aqui beleza
+
+como ainda trazer todos os pensamentos sem filtro algum porque eu tenho o prazer de usuários que estão
+
+de usuários do sistema e os meus também.
+
+No entanto todo mundo que está cadastrado ainda vai fazer o seguinte com tal está.
+
+é aqui que vai dar um tal.
+
+FIM DA.
+
+E eu não vou colocar filtro nenhum eu simplesmente esperar isso aqui chegar e vou mandar lá para votar.
+
+Então a gente tem aqui um fim bruto onde a gente vai estar passando todos os pensamentos.
+
+Eu só vou na verdade utilizar esse cara aqui também pra fazer o MEP e receber só os dados para me ajudar
+
+então vou estar aqui tout data eu vou dizer que está Holtz você aponta o MEP é pegar só os da tabela.
+
+Então eu estou conseguindo mandar.
+
+O rei com todas as autoridade poderia criar a bolsa e criar os filtros distância que vai mudar um pouco
+
+mas a gente pode começar a se.
+
+Então vou na minha home e aqui em tecnologia HTML e vai ser um pouco diferente do que está aqui.
+
+Mas a gente pode começar no básico.
+
+Então aqui eu vou ter um gibi ou melhor e vou botar um por enquanto agora está que embaixo vou ter um
+
+tal desconto tem razão galera.
+
+E aqui está o desconto.
+
+A gente vai ter um pit Thoughts daquilo.
+
+Todas as outras que vêm lá do back end e Que Eu Vou imprimi las uma uma.
+
+Como são citações a gente pode considerar os pensamentos com citações de usuários.
+
+A gente pode estar colocando de forma seletiva manter como é que a gente coloca uma situação de forma
+
+semântica que utilizam a tag figure.
+
+A citação fica dentro de uma tag blackout ou seja pensamento ou botar entre aspas dispondo tipo está
+
+no nome do usuário.
+
+Quem criou esse pensamento fica numa tag chamada Fire ketchup.
+
+Então eu posso botar assim por.
+
+é que eu vou botar um bis e usar ponto negro.
+
+Só que eu não vou ter acesso isso aqui.
+
+Vão dar um F5 na Roma.
+
+Ele não traz então tem que utilizar aquela mesma estratégia que a gente fez lá com o usuário tem que
+
+trazer.
+
+Usuário de cada tarefa melhor fazer isso aqui no fim da aula eu posso simplesmente começar a nossa esse
+
+objeto que vai ser mais grande de configuração mas da inclusão no use.
+
+SIMPLES ASSIM GALERA.
+
+Já cheguei aqui então foi queira que para trazer o nosso e uso enxuto só que o uso agora ele não vai
+
+vindo da tabela.
+
+Ele fica separado deixarei aqui então vai ter que fazer uma leve mudança que eu vou utilizar um método
+
+GET que todos esses objetos tem.
+
+Eu vou pegar o dado como play então todos eles vão ser jogado na mesma rede.
+
+O usuário é o pensamento e aí agora eu vou ter acesso ao usuário do pensamento vou dar uma olhada na
+
+roda veja que eu tenho dois pensamentos de Mateus e dois do Jurandir.
+
+Beleza então eu fiz em uma etapa muito importante que é trazer esses pensamentos lá do banco para cá.
+
+Agora a gente tem que utilizar um pouco isso aqui também eu fui embora para praça e dar uma melhorada
+
+nessa roda.

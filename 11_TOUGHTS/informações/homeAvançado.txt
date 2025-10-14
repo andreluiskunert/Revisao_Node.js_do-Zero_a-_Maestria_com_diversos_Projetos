@@ -1,0 +1,92 @@
+Miniatura da aula
+0:58 / 3:21
+
+Na hora da verdade eu pensei melhor na Roma a gente vai ter diversos elementos e isso não colocou todos
+
+eles aqui ainda.
+
+Então vamos incluir esse HTML primeiro para depois a gente fazer aí os estilos.
+
+Então como é que eu vou fazer aqui.
+
+Eu vou adicionar o nosso forme aqui dentro dessa Dive que a gente tenha do homem.
+
+Ele acha que vai se chamar fome e vai ter o campo aqui eu também vou ter outro fora.
+
+Só que ele vai ficar numa ordem conta ele que vai definir as ordens dos itens para esse primeiro aqui.
+
+Ele vai levar na Barra.
+
+Ele vai ter um equipe de gestão para buscar os dados que virão do banco.
+
+Ele vai dar um GET e envia para Roma que eu vou ter que testar um meio de surf para procurar os dados.
+
+Vou usar esse parâmetro aqui pois se você está buscando por algo.
+
+E nem vai ter o input de Itaipu CeBIT que vai ter classe BPN.
+
+Quem vai mandar o verbo e buscar.
+
+Então criou o formulário de busca lá no projeto do F5 do formulário de busca está aqui.
+
+Agora vamos criar o formulário de coordenação para depois gente poder utilizar a gravação esse é o seguinte
+
+a gente vai ter essa ordem que tempo vai ter um espaço que ordenar.
+
+Por.
+
+Como gente viu lá na apresentação do projeto há duas equipas uma para os mais novos e os mais antigos.
+
+A gente pode fazer isto de uma maneira bem simples criando dois formulários de ética.
+
+A própria Romi.
+
+E quando o clima começou a andar aqui eu enviar alguns parâmetros com o input Rider que eu vou enviar
+
+o sangue porque eu posso estar buscando e querendo voltar lá depois.
+
+Então esse pessoal aqui vai ter um velho que a gente vai colocar ele como diz Sanchez por enquanto.
+
+Depois ele vai conseguir preencher eu vou ter outro put Rider que vai ser o de ordenar ordens em ordem
+
+e vai ter o velho índio para esse cara vai treinar para os mais novos.
+
+Beleza.
+
+Como é que eu vou mandar este Summit.
+
+Eu vou ter um boleto tipo Summit que deles vai ter um ícone Buy ponto Buy traço zero.
+
+E isso vai criar uma seta para cima como a gente instalou esse cara aqui lá na hora de configuração
+
+certinha do bootstrap.
+
+E aqui eu vou ter um outro formulário muito semelhante tal que ele vai fazer um GET para o bar tudo
+
+mais que no ordem ele vai chamar.
+
+O valor pode é e ele vai ter o valor dele.
+
+Tá.
+
+E aí a gente vai ter a ir para baixo.
+
+Simples assim.
+
+Eu tenho aqui embaixo ainda um link que leva ao mar e limpar todo esse caso aqui o de busca de ordem
+
+lógica não é disparate.
+
+Então se vai direcionar para a Barra.
+
+Eu limpo todos os filtros.
+
+E aí eu desfaz tudo o que foi feito limpando a busca e a ordenação tá.
+
+Então ele pode dizer que a gente tem agora a homem mais próxima do fim.
+
+Então agora sim Galera bora pro CCS pesquisar esses elementos pra gente então passa mais à frente aí
+
+pra terminar o projeto.
+
+Bora lá.
