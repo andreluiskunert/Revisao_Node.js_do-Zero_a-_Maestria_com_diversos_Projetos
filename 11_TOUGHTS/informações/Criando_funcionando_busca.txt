@@ -1,0 +1,193 @@
+Então AGORA GALERA BORA executar essa música que vote vai no ar para que traga resultados filtrados
+
+pra gente né.
+
+Então qual vai ser a ideia de resgatar esses valores.
+
+Lá no bar onde vai vim aqui no show Talks eu vou criar uma variável chamada Let's Dance ou seja vou
+
+modificar o valor delas se tenho algo na busca como é que eu verifico se chegou alguma coisa.
+
+Vou dar um is Kerry se tá.
+
+Eu consigo extrair esse valor.
+
+Se tiver eu vou colocar essa variável aqui é que quero ser.
+
+Por que acontece isso quando se submete alguma coisa aqui que ele não RL também não aceite alguma coisa
+
+então eu tenho acesso a esse parâmetro como em reequipar e como reequipar essa que também vivem dessa
+
+maneira que é o sétimo alguma coisa tem que puxar como eu sei para vocês ali está o que quero que seja.
+
+Então se veio cara eu vou ter que fazer uma quero que fique e está.
+
+Como é que eu vou fazer.
+
+Eu vou ter que chamar um operador que vai me permitir a criar uma consulta de Light White no SQL.
+
+é uma busca de filtro.
+
+Consigo fazer com palavras que contenham o que eu busquei por exemplo se eu busco.
+
+Então eu vou trazer resultados que tenham então.
+
+E assim por diante.
+
+O que estiver construído na minha palavra chave de busca vai ser.
+
+Resgatado Duba então tem a busca por cursos que procura exatamente a mesma.
+
+O que a gente quer é ter a busca do olho que está.
+
+Veja mais em seu apê que é o operador do eu posso criar diversas situações com que ele vem de está.
+
+Eu deixei de vencer esse cara.
+
+O link se ele for vazio ali para o operador não muda nada.
+
+Eu vou trazer todos os resultados então eu posso seguramente passar o que eu quero com o leque preenchido
+
+o vazio.
+
+Então essa é uma dica interessante porque daí eu vou conseguir trazer os resultados filtrados ou não.
+
+Se não tiver preenchido o filtro que estiver filtro então vou dar um era aqui que com esse comércio
+
+e eu vou botar o que eu quero chutar o título para o P.
+
+Operador like.
+
+é aí que eu coloco o que como e como filtrar esse like.
+
+Quando eu quero filtrar palavras que começam terminam um tem no meio o que eu busquei vou colocar aqui
+
+uma string dinâmica no tapete strings e vou circundar a minha string com essas porcentagens isso aqui
+
+indica coringa ou seja tudo que tiver depois ou antes não me interessa eu quero que está frases ou pensamentos
+
+que contenham tal valor.
+
+A parte mais difícil de entender mas já vou ver como é que funciona na prática.
+
+Então eu botei operador que contém em si aquilo que eu não esperava ele vai trazer te vazio o que retorno
+
+que está só mudando isso eu consigo trazer.
+
+As minhas as minhas buscas certo.
+
+Então bora testar aqui.
+
+Vou procurar algo que possa ter nos dois botar um saco só este ano.
+
+Vou buscar aqui não é só nessas duas aqui eu tenho SATA possam pensar que beleza é pensamento.
+
+Então o Sage está envolvido aí nas duas caras que tem aqui e céu limpo.
+
+Limpopo já resetar a busca.
+
+Então mostrei o primeiro passo para filtrar dados por buscas só que a interface não está interessante
+
+para o usuário que busca porque ele não parece estar muito clara para quem está vendo.
+
+Depois que a pessoa busca então a gente vai enviar esse seja também lá pro Front.
+
+O senhor está aqui.
+
+Eu vou fazer um iPhone para ver se ele está buscando ou não.
+
+Então vou botar seu iPhone 7 se o 6 está preenchido por alguma coisa.
+
+Ele vai imprimir algo se não ele vai imprimir.
+
+Outra coisa que.
+
+Que é a nossa cara um aqui.
+
+EU BOTO MAIS.
+
+Então posso mudar esse texto.
+
+Conheça alguns dos nossos pensamentos.
+
+Está.
+
+E é aí que eu vou imprimir esse veio buscar.
+
+Então agora eu vou chegar um sem pressa.
+
+Vai se ver em busca eu quero imprimir outra coisa assim.
+
+Eu vou imprimir.
+
+Eu vou colocar.
+
+A seguinte frase você está buscando porque eu consigo botar a busca da pessoa que se essas.
+
+Então vamos testar de novo lá botar esse ar aqui e você está buscando por essa beleza.
+
+Já é alguma coisa na RTP tá trazendo o que o usuário está buscando mas eu quero melhorar mais ainda.
+
+Eu vou mostrar quantos resultados foram encontrados pela busca dele.
+
+Como é que eu posso fazer isso aqui vou simplesmente contar esse resultados.
+
+Eu vou criar aqui.
+
+Uma variável chamada tal que tenta que ela vai começar como da Gestalt se mexe.
+
+Então a quantidade de diz que o tempo.
+
+Th.
+
+E como ela ele vai contar os moderadamente eu posso mandar aqui para o front end e o filtro da busca
+
+sem filtro então já vou saber quantas tout mas só me interessa isso na verdade na busca para saber quais
+
+resultados o usuário tem do poder tem pra mim aí também os resultados sem a busca pela caixa tem 15
+
+mil pensamentos cadastrados por exemplo.
+
+Porém o zero galera ainda o baile não significa Fausto eu vou ter que fazer uma leve modificação aqui
+
+se o status que tem é zero eu vou dizer que o status aí é falso.
+
+E aí já conseguiu imprimir e fez isso da maneira mais interessante aqui.
+
+Então bora fazer agora esse nosso.
+
+Isso que eu queria para vocês nem com a possibilidade de tão eficaz que então se via alguma quantidade.
+
+A coisa está bem para e outra senão eu vou na web fechar o WiFi.
+
+Então eu vou estar aqui foram encontrados tá ótimo voltar foram encontrados espera.
+
+Tal que até aí já vinha a quantidade de exiba AQUI NO ATAQUE FORA pensamentos isso não foi nada.
+
+Eu vou botar o pé.
+
+Nenhum pensamento foi encontrado.
+
+Para o termo é que eu posso botar espaço.
+
+Então eu consigo dar o feedback mais visual pro usuário e mostro quantos foram encontrados.
+
+Eu dou o meu contrato baseado no meu TOTAL QUE TEREI QUE enviado o lado bacana que a gente não pode
+
+fazer condições lógicas aqui é devido a limitação do renovasse.
+
+Agora se a gente testa ali eu tenho dois pensamentos encontrados.
+
+Se eu busco uma coisa muito louca aqui eu vou ter nenhum pensamento foi encontrado para o tema será
+
+de azar.
+
+Entenderam.
+
+Então é muito interessante porque a gente consegue dar o feedback melhor para o usuário mais visual
+
+com cara de sistema e é assim que a gente faz uma busca no sistema.
+
+Agora galera vou ficar por aqui na próxima aula vão trabalhar na ordenação pra gente fechar o sistema
+
+em quilowatts hora lá.
