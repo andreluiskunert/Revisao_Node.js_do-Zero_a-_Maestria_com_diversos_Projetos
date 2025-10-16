@@ -1,0 +1,7 @@
+O que é MongoDB?
+●Um banco de dados orientado a documento;
+●Os dados ficam salvos em estruturas parecidas com JSON;
+●Frequentemente utilizado com Node.js;
+●Diferente do SQL temos índices primários e secundários;
+●Utilizaremos um driver para conectar a nossa aplicação com o MongoDB,
+semelhante ao MySQL e Sequelize;

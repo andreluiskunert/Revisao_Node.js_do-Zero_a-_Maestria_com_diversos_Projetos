@@ -1,0 +1,23 @@
+Galera sejam bem vindos a nova seção aqui no curso agora vai aprender a integrar o novo Jazz com o nosso
+
+mongo DB.
+
+O que acontece aqui no BB banco relacional a gente vai aprender mais sobre tem sessões extras aqui no
+
+curso falando desse assunto pra entender mais ainda quando chegar no nível intermediário e conseguir
+
+associar facilmente quem tá fazendo aqui de falar um pouco mais abstrata com métodos construtivos que
+
+irão utilizar e também esse cara vai ser base para o nosso próximo projeto que vai se repetir.
+
+Então já fazer uma imersão no BBB depois de uma imersão em longo uso que seriam sequelas do BB ao ADM.
+
+Nesse caso pra gente poder aprender a pedir e fazer nosso projeto que está desenhando o caminho final
+
+nessa primeira etapa até pelo menos para o lançamento do curso pois a gente vai ter mais sessões mais
+
+dos fundamentos digamos assim perdendo no jazz completamente.
+
+Isso aqui já é suficiente já vai conseguir atingir o nível de proficiência com no jazz.
+
+Dito isso bora lá começar como um bebê na principal.
