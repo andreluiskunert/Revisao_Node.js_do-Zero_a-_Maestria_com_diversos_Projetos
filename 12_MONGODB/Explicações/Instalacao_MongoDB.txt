@@ -1,0 +1,270 @@
+ø Passo a Passo:
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ sudo apt update
+[sudo] senha para desenvolvedor:        
+Atingido:2 https://download.docker.com/linux/ubuntu jammy InRelease                                                                                                          
+Atingido:3 https://packages.microsoft.com/repos/code stable InRelease                                                                                                        
+Atingido:1 https://repository.spotify.com stable InRelease                                                                                                                   
+Atingido:4 http://security.ubuntu.com/ubuntu jammy-security InRelease                                                                                                        
+Atingido:5 http://archive.ubuntu.com/ubuntu jammy InRelease                                                                                                                  
+Obter:6 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]                                                         
+Atingido:7 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 InRelease                                                    
+Atingido:8 https://ppa.launchpadcontent.net/ondrej/php/ubuntu jammy InRelease                
+Obter:9 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Ign:10 http://packages.linuxmint.com virginia InRelease 
+Atingido:11 http://packages.linuxmint.com virginia Release
+Obter:12 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [112 kB]
+Obter:13 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 DEP-11 Metadata [212 B]
+Obter:14 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [360 kB]
+Obter:16 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Obter:17 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 DEP-11 Metadata [7.124 B]
+Obter:18 http://archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 DEP-11 Metadata [212 B]
+Obter:19 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [9.736 B]
+Obter:20 http://archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Baixados 745 kB em 5s (151 kB/s)              
+Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... Pronto
+Lendo informação de estado... Pronto        
+Todos os pacotes estão atualizados
+N: Skipping acquire of configured file 'multiverse/binary-i386/Packages' as repository 'https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 InRelease' doesn't support architecture 'i386'
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongodb -version
+mongodb: comando não encontrado
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongodb -v
+mongodb: comando não encontrado
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongod --version
+db version v6.0.26
+Build Info: {
+    "version": "6.0.26",
+    "gitVersion": "0c4ec4b6005f75582ce208fc800f09f561b6c2e8",
+    "openSSLVersion": "OpenSSL 3.0.2 15 Mar 2022",
+    "modules": [],
+    "allocator": "tcmalloc",
+    "environment": {
+        "distmod": "ubuntu2204",
+        "distarch": "x86_64",
+        "target_arch": "x86_64"
+    }
+}
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongo --version
+Comando 'mongo' não encontrado, você quis dizer:
+  comando 'mono' do deb mono-runtime (6.8.0.105+dfsg-3.2)
+Experimente: sudo apt install <deb name>
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongosh --version
+2.5.8
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ sudo systemctl status mongod
+● mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled)
+     Active: active (running) since Fri 2025-10-17 18:16:56 -03; 3h 37min ago
+       Docs: https://docs.mongodb.org/manual
+   Main PID: 1548 (mongod)
+     Memory: 76.3M
+        CPU: 2min 32.660s
+     CGroup: /system.slice/mongod.service
+             └─1548 /usr/bin/mongod --config /etc/mongod.conf
+
+out 17 18:16:56 desenvolvedor-ThinkPad-T440p systemd[1]: Started MongoDB Database Server.
+out 17 18:16:56 desenvolvedor-ThinkPad-T440p mongod[1548]: {"t":{"$date":"2025-10-17T21:16:56.809Z"},"s":"I",  "c":"CONTROL",  "id":7484500, "ctx":"-","msg":"Environment var>
+lines 1-12/12 (END)
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ ps aux | grep mongo
+mongodb     1548  1.1  1.0 2590576 78664 ?       Ssl  18:16   2:32 /usr/bin/mongod --config /etc/mongod.conf
+desenvo+   24124  0.0  0.0   9252  2280 pts/4    S+   21:54   0:00 grep --color=auto mongo
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongo
+Comando 'mongo' não encontrado, você quis dizer:
+  comando 'mono' do deb mono-runtime (6.8.0.105+dfsg-3.2)
+Experimente: sudo apt install <deb name>
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongosh
+Current Mongosh Log ID: 68f2e5ca2a29d139a4ce5f46
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.8
+Using MongoDB:          6.0.26
+Using Mongosh:          2.5.8
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2025-10-17T18:16:56.977-03:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2025-10-17T18:16:58.147-03:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2025-10-17T18:16:58.147-03:00: vm.max_map_count is too low
+------
+
+test> 
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+test> 
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ sudo systemctl start mongod
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongo
+Comando 'mongo' não encontrado, você quis dizer:
+  comando 'mono' do deb mono-runtime (6.8.0.105+dfsg-3.2)
+Experimente: sudo apt install <deb name>
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ 
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ sudo systemctl start mongod
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongo
+Comando 'mongo' não encontrado, você quis dizer:
+  comando 'mono' do deb mono-runtime (6.8.0.105+dfsg-3.2)
+Experimente: sudo apt install <deb name>
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ sudo apt update
+Atingido:2 https://download.docker.com/linux/ubuntu jammy InRelease                                                                                                          
+Atingido:3 https://packages.microsoft.com/repos/code stable InRelease                                                                                                        
+Atingido:1 https://repository.spotify.com stable InRelease                                                                                                                   
+Obter:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]                                                                        
+Ign:5 http://packages.linuxmint.com virginia InRelease                                                                   
+Atingido:6 http://archive.ubuntu.com/ubuntu jammy InRelease                                                               
+Atingido:7 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 InRelease                                                                                    
+Atingido:8 http://packages.linuxmint.com virginia Release                                                                                                         
+Atingido:10 http://archive.ubuntu.com/ubuntu jammy-updates InRelease                                                                                   
+Atingido:11 http://archive.ubuntu.com/ubuntu jammy-backports InRelease                                                        
+Atingido:12 https://ppa.launchpadcontent.net/ondrej/php/ubuntu jammy InRelease                                                
+Obter:13 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [54,6 kB]
+Obter:14 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 DEP-11 Metadata [208 B]                                                                           
+Obter:15 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [125 kB]                                                                            
+Obter:16 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 DEP-11 Metadata [208 B]                                                                           
+Baixados 309 kB em 13s (23,0 kB/s)                                                                                                                                           
+Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... Pronto
+Lendo informação de estado... Pronto        
+Todos os pacotes estão atualizados
+N: Skipping acquire of configured file 'multiverse/binary-i386/Packages' as repository 'https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 InRelease' doesn't support architecture 'i386'
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ wget -qO - https://www.mongodb.org/static/pgp/server-7.0.asc | sudo apt-key add -
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+OK
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ sudo apt update
+sudo apt install -y mongodb-mongosh
+Atingido:2 https://download.docker.com/linux/ubuntu jammy InRelease                                                                                                          
+Atingido:3 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 InRelease                                                                                               
+Atingido:1 https://repository.spotify.com stable InRelease                                                                                                                   
+Ign:4 http://packages.linuxmint.com virginia InRelease                                                                                                                       
+Atingido:5 https://packages.microsoft.com/repos/code stable InRelease                                                                                                        
+Atingido:6 http://archive.ubuntu.com/ubuntu jammy InRelease                                                                                                                
+Atingido:7 http://security.ubuntu.com/ubuntu jammy-security InRelease                                                                                                      
+Atingido:8 http://packages.linuxmint.com virginia Release                                                                                                                  
+Obter:9 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 InRelease [3.005 B]                                                         
+Atingido:10 http://archive.ubuntu.com/ubuntu jammy-updates InRelease                     
+Atingido:11 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Atingido:13 https://ppa.launchpadcontent.net/ondrej/php/ubuntu jammy InRelease
+Obter:14 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0/multiverse amd64 Packages [93,2 kB]
+Obter:15 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0/multiverse arm64 Packages [91,8 kB]
+Baixados 188 kB em 4s (43,6 kB/s)    
+Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... Pronto
+Lendo informação de estado... Pronto        
+7 pacotes podem ser atualizados. Corra 'apt list --upgradable' para vê-los.
+N: Skipping acquire of configured file 'multiverse/binary-i386/Packages' as repository 'https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 InRelease' doesn't support architecture 'i386'
+W: https://repo.mongodb.org/apt/ubuntu/dists/jammy/mongodb-org/7.0/InRelease: A chave é armazenada no chaveiro legado trust.gpg (/etc/apt/trusted.gpg), veja a seção DEPRECATION em apt-key(8) para detalhes.
+Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... Pronto
+Lendo informação de estado... Pronto        
+mongodb-mongosh já é a versão mais recente (2.5.8).
+Os seguintes pacotes foram instalados automaticamente e já não são necessários:
+  bridge-utils gconf-service gconf-service-backend gconf2-common gyp libgconf-2-4 libjs-events libjs-inherits libjs-is-typedarray libjs-psl libjs-source-map
+  libjs-sprintf-js libjs-typedarray-to-buffer libnode-dev libuv1-dev linux-headers-5.15.0-143 linux-headers-5.15.0-143-generic linux-headers-5.15.0-144
+  linux-headers-5.15.0-144-generic linux-headers-5.15.0-151 linux-headers-5.15.0-151-generic linux-headers-5.15.0-152 linux-headers-5.15.0-152-generic
+  linux-headers-5.15.0-153 linux-headers-5.15.0-153-generic linux-headers-5.15.0-156 linux-headers-5.15.0-156-generic linux-image-5.15.0-143-generic
+  linux-image-5.15.0-144-generic linux-image-5.15.0-151-generic linux-image-5.15.0-152-generic linux-image-5.15.0-153-generic linux-image-5.15.0-156-generic
+  linux-modules-5.15.0-143-generic linux-modules-5.15.0-144-generic linux-modules-5.15.0-151-generic linux-modules-5.15.0-152-generic linux-modules-5.15.0-153-generic
+  linux-modules-5.15.0-156-generic linux-modules-extra-5.15.0-143-generic linux-modules-extra-5.15.0-144-generic linux-modules-extra-5.15.0-151-generic
+  linux-modules-extra-5.15.0-152-generic linux-modules-extra-5.15.0-153-generic linux-modules-extra-5.15.0-156-generic node-abbrev node-ansi-regex node-ansi-styles
+  node-ansistyles node-are-we-there-yet node-arrify node-asap node-asynckit node-balanced-match node-brace-expansion node-chownr node-clean-yaml-object node-color-convert
+  node-color-name node-commander node-core-util-is node-decompress-response node-delayed-stream node-delegates node-depd node-diff node-encoding node-end-of-stream
+  node-err-code node-escape-string-regexp node-fancy-log node-foreground-child node-fs.realpath node-function-bind node-get-stream node-glob node-growl node-has-flag
+  node-has-unicode node-hosted-git-info node-iconv-lite node-iferr node-imurmurhash node-indent-string node-inflight node-inherits node-ini node-ip node-ip-regex
+  node-is-buffer node-is-plain-obj node-is-typedarray node-isarray node-isexe node-json-parse-better-errors node-jsonparse node-kind-of node-lodash-packages
+  node-lowercase-keys node-lru-cache node-mimic-response node-minimatch node-minimist node-minipass node-mute-stream node-negotiator node-npm-bundled node-once node-osenv
+  node-p-cancelable node-p-map node-path-is-absolute node-process-nextick-args node-promise-inflight node-promise-retry node-promzard node-pump node-quick-lru node-read
+  node-readable-stream node-resolve node-retry node-safe-buffer node-set-blocking node-signal-exit node-slash node-slice-ansi node-source-map node-spdx-correct
+  node-spdx-exceptions node-spdx-expression-parse node-spdx-license-ids node-sprintf-js node-stealthy-require node-string-decoder node-supports-color node-text-table
+  node-time-stamp node-tmatch node-typedarray-to-buffer node-universalify node-util-deprecate node-validate-npm-package-license node-webidl-conversions node-whatwg-fetch
+  node-wrappy node-yallist php8.1-bcmath php8.1-mysql ubuntu-fan
+Utilize 'sudo apt autoremove' para os remover.
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 7 não atualizados.
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongosh
+Current Mongosh Log ID: 68f2e6fed8f6465b37ce5f46
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.8
+Using MongoDB:          6.0.26
+Using Mongosh:          2.5.8
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2025-10-17T18:16:56.977-03:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2025-10-17T18:16:58.147-03:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2025-10-17T18:16:58.147-03:00: vm.max_map_count is too low
+------
+
+test> 
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+test> exit
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ db.version()
+> 
+> 
+> ^C
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongod --version
+db version v6.0.26
+Build Info: {
+    "version": "6.0.26",
+    "gitVersion": "0c4ec4b6005f75582ce208fc800f09f561b6c2e8",
+    "openSSLVersion": "OpenSSL 3.0.2 15 Mar 2022",
+    "modules": [],
+    "allocator": "tcmalloc",
+    "environment": {
+        "distmod": "ubuntu2204",
+        "distarch": "x86_64",
+        "target_arch": "x86_64"
+    }
+}
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ sudo systemctl start mongod
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongo
+Comando 'mongo' não encontrado, você quis dizer:
+  comando 'mono' do deb mono-runtime (6.8.0.105+dfsg-3.2)
+Experimente: sudo apt install <deb name>
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ mongosh
+Current Mongosh Log ID: 68f2e7837e42fd4e63ce5f46
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.8
+Using MongoDB:          6.0.26
+Using Mongosh:          2.5.8
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2025-10-17T18:16:56.977-03:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2025-10-17T18:16:58.147-03:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2025-10-17T18:16:58.147-03:00: vm.max_map_count is too low
+------
+
+test> show dbs
+admin              40.00 KiB
+alexandria         72.00 KiB
+alexandriaonline   80.00 KiB
+biblioteca         72.00 KiB
+config             72.00 KiB
+livraria           72.00 KiB
+local             184.00 KiB
+test> exit()
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+$ 
