@@ -1,0 +1,247 @@
+Então galera agora a gente finalmente vai colocar a mão na massa e é a partir desse momento também que
+
+as aulas teóricas vão diminuindo pouco.
+
+Nosso primeiro mergulho no mongo DB quem vai fazer em uma aula só a gente vai criar um banco de dados
+
+criar uma Collection inserir um dado no banco e ainda encontrar esse dado com o comando faz o método.
+
+Eu boto que uma observação a gente vai aprender todas comandos em detalhes posteriormente.
+
+Vai falar muito desses assuntos ao longo do curso.
+
+Porém como todo esse setup é muito fácil não beber e eu citei esse cara esse cenário como um dos pontos
+
+positivos dele.
+
+Nada mais justo que eu mostrar para vocês agora na prática.
+
+Então bora lá que nosso comando é o terminal tio utilizando pra gente fazer todas as sequências de passo
+
+como o dele.
+
+Então galera o que acontece aqui é que estou com meu terminal aberto meu comando vai estar com o teu
+
+aí e dependendo do sistema operacional você tem que estar enchendo o servidor do mundo Windows não precisa
+
+e agora ele vai digitar um longo aqui para poder constatar a nossa seção tá fazendo o login no banco
+
+de dados SGBD para poder utilizar o nosso comandante entrou no chao.
+
+O fato de digitar comando Mongo dá a gente ao acesso no shell e como artista ou esse cara gente boa
+
+de mim digamos assim tá.
+
+Então aqui ele vai sempre imprimir as coisas de cima pra baixo.
+
+Então o nosso scroll do mouse aliás do ponteiro do texto é sempre ultra baixo e isso vai piorando a
+
+visualização inclusive até.
+
+Aumentar essa fonte está.
+
+Para tentar deixar a melhor visualização para você está bom.
+
+é como ir falando o scroll vai descendo.
+
+E não é legal a gente ficar olhando os resultados porque você vai ficar embaixo quente obtém aqui no
+
+fim da tela então você vai estar utilizando o comando celeste para poder limpar a tela do terminal.
+
+E isso eu vou estar utilizando em certo ponto o curso já no modo automático porque já estou acostumado
+
+com isso então se vocês verem a tela apagando as informações subindo e subindo é porque eu utilizei
+
+o CLS beleza a prova da única e já limpou tudo ok então galera eu falei pra vocês que a gente vai criar
+
+um banco de dados que é a nossa primeira etapa.
+
+Depois criar uma coleção que seria nossa tabela e depois ser inundado e depois encontrar esse dado o
+
+que a gente inseriu então antes de mais nada a gente vai ver todas como as que depois não se preocupem.
+
+A gente pode mostrar todos os bancos de dados do meu sistema com comando de show BB está show da Tablet
+
+e aqui.
+
+Como se podem ver talvez o de vocês ter só três.
+
+Se vocês instalaram agora de mim confiem local eu sou dos três caras aqui são uns três que eu estou
+
+fazendo para produção de aulas do curso.
+
+Então não estranhe se o correto é ter esses três caras aqui e inicialmente se mostrou todos os bancos
+
+de dados agora que criar um banco para poder utilizar e criar um só coletivo na cidade.
+
+Mas a gente criou um banco mau o BB Ribeirão os está cobrando e uso de usar algum banco.
+
+Então o destaque é o primeiro banco.
+
+E esse comando.
+
+Não parece o comando de criação mas ele de fato cria um banco então ou pelo menos torna o nosso banco
+
+que vai efetivar as nossas consultas.
+
+E isso é muito importante mas que eles também têm isso.
+
+Tem que usar um banco e sair rodando quero entender o que é aqui e ali diz sweet child DB primeiro banco
+
+beleza.
+
+Por isso eu dou um show de beleza agora aqui de novo que eu não recebo.
+
+Esse é meu primeiro banco e isso se dá porque eu não tenho dados nesse banco.
+
+Então mongo DB é só cria de fato um banco quando ele possui dados.
+
+Então vou no empate de novo vocês viram que o que me deu uma mensagem de sucesso e a gente está de fato
+
+no banco e no primeiro banco.
+
+E agora em vez de ser inundado é uma coisa que a gente não precisa criar a Collection de forma explícita
+
+embora de posse.
+
+Mas como é que eu crio a Corte.
+
+Eu vou primeiramente se referir ao banco de dados ainda utilizando BB ponto.
+
+Isso significa independente do banco de dados que eu estiver execute comandos nesse banco.
+
+Então não importa o banco de dados a gente criou essa facilidade de digitar BB e o mundo sabe qual o
+
+banco quer inserir os dados ou fazer qualquer outra operação.
+
+Depois desse primeiro ponto aqui a gente coloca a Collection quente que é inserir os dados ou independentes
+
+que quiser fazer a votação de primeira.
+
+A gente não tem ela ainda.
+
+Mas como falei para vocês a gente consegue criar uma Collection on line digitando comandos aqui inserindo
+
+dados.
+
+Vai ser criada então o nosso primeiro recomenda inserção.
+
+A gente vai criar o nosso banco que tá aqui comando mais básico de sessão e um certo volta e percebam
+
+que o JavaScript ele aqui sim o que quer dizer isso.
+
+Se eu botar um certo One com A maiúsculo ele não vai saber o que eu estou me referindo.
+
+Então sempre respeitem as letras maiúsculas que coloco aqui nos métodos nos bancos e tudo mais dá pra
+
+gente poder falar a mesma língua.
+
+Ah isso aqui eu falei pra vocês que é um método.
+
+Então a gente está dizendo que a classe Collection tem um método chamado em certo modo.
+
+E como é que eu coloco parâmetros no método.
+
+Em.
+
+Eu abro as paredes da.
+
+E aqui dentro gente vai ter que seria o dado.
+
+Também falou para vocês que a gente sempre é séria em um dia de sol Besson que vem transferindo um objeto
+
+JavaScript AQUI COMO NOSSO DADO vou botar assim a abre e fecha a chave está aqui dentro eu vou colocar
+
+as minhas chaves e valores.
+
+Então fica aí à vontade para criar uma mais do que eu criei aqui só para treinar e estar votar por exemplo
+
+um nome é a minha chave dois pontos eu coloco o valor que representa o nome.
+
+Então eu sei que é uma string trazendo meus conhecimentos básicos de programação JavaScript as strings
+
+são escritas entre aspas e o formato aceita que eu disse é que eu boto o valor dela Matheus e depois
+
+vou votar idade dois pontos e aqui eu vou inserir um número um número não preciso das aspas e eu espero
+
+ele com um número inteiro 30.
+
+Então o peixe objeto esse dado ele tem o nome de Matheus uma idade de 30 anos.
+
+Ok beleza meu comando está completo.
+
+Vou dar uma Inter aqui.
+
+Ele diz que o comando foi aceito né então.
+
+E ele também mostra que o ID inserido foi esse cara que uma vez que a gente cria um registro no longo
+
+ele automaticamente criam ai de mim já falei sobre isso depois.
+
+Que é o único.
+
+Como se fosse uma prova de que o lado esquerdo está e aí a gente tem a possibilidade de ter um registro
+
+com uma chave única já inserido no banco.
+
+Uma mão na roda que não bebeu fez para a gente.
+
+Lembre se daquela agilidade que eu falei para vocês que tem nesse banco uma estrutura de banco do BB.
+
+Então agora se eu dou um show de bebês eu já vejo aqui que tem o primeiro banco concedido porque tem
+
+um dado inserido nele.
+
+Então ele mostra porque ele de fato realizou a criação da Collection e do banco e agora nosso último
+
+objetivo aqui dessa aula é encontrar o dado.
+
+Então aqui eu vou utilizar a mesma estrutura do Primeiro Comando BB de primeira Collection porque isso.
+
+Sempre vai ser assim.
+
+Se eu estiver utilizando o banco ABC não importa.
+
+DB vai ser fixo.
+
+Eu vou botar o nome da colega de seita trabalhando sempre na primeira palestra.
+
+Isso aqui é o suficiente ok e eu vou utilizar o comando find do olho já percebeu que os comandos médios
+
+como se preferir chamar eu vou botar 10 não fim diferente vai se referindo à mesma coisa.
+
+Eles têm padrões então eu inserir um dado eu encontrei um dado.
+
+Então notem isso porque vai ajudar a memorização ou pelo menos o entendimento mais fácil de outros comandos
+
+do mundo ok é que eu posso colocar assim como coloquei um dado critério um filtro para encontrar um
+
+dado.
+
+Se eu deixo vazio ele encontra com verdade.
+
+Então por consequência de eu só ter um dado e eles me contaram que ele vai encontrar o dado do Matheus.
+
+Beleza então em pé.
+
+E a gente recebe de volta como retorno do.
+
+O dado que eu acabei de ser.
+
+Mateus 30 com o que foi inserido automaticamente pelo mundo tá então.
+
+Aqui a gente fez uma pequena introdução ao primeiro mergulho no bebê.
+
+Vocês viram que é bem tranquilo para as operações que dá pra gente fazer relação com SQL.
+
+A gente fez um set a gente fez um select em que fez um 3 tempo e fez um clip Database.
+
+Só que de modo muito mais simplista o que é bem atrativo nesse banco de dados.
+
+Então a gente já está inicializar.
+
+Eu devia ter votado no Word ali para sair da posição.
+
+Queria um dado agora com ela 8 para tirar a maldição.
+
+E bora pra cima lá aprofundar aí mais um bebê.
