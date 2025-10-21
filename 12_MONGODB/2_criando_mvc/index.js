@@ -1,24 +1,28 @@
-const express = require('express')
-const exphbs = require('express-handlebars')
-const app = express()
+const express = require("express");
+const { engine } = require("express-handlebars");
+const app = express();
 
-const conn = require('./db/conn').run
+const conn = require("./db/conn").run;
 
-const productsRoutes = require('./routes/productsRoutes')
+// Configurar Handlebars
+app.engine("handlebars", engine());
+app.set("view engine", "handlebars");
+app.set("views", "./views"); // opcional, mas recomendado
 
-app.engine('handlebars', exphbs())
-app.set('view engine', 'handlebars')
-
+// Middlewares
 app.use(
   express.urlencoded({
     extended: true,
-  }),
-)
+  })
+);
 
-app.use(express.json())
+app.use(express.json());
 
-app.use(express.static('public'))
+// Exemplo de rota simples
+app.get("/", (req, res) => {
+  res.render("home"); // busca views/home.handlebars
+});
 
-app.use('/', productsRoutes)
-
-app.listen(3000)
+app.listen(3000, () => {
+  console.log("Servidor rodando na porta 3000 🚀");
+});
