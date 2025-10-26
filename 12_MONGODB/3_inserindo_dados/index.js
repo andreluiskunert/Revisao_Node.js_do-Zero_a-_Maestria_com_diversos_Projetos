@@ -1,24 +1,25 @@
 const express = require('express')
-const exphbs = require('express-handlebars')
+const { engine } = require('express-handlebars') // versão nova
 const app = express()
 
-const conn = require('./db/conn').run
+// Importar rotas
+const productRoutes = require('./routes/productsRoutes')
 
-const productsRoutes = require('./routes/productsRoutes')
-
-app.engine('handlebars', exphbs())
+// Configurar template engine
+app.engine('handlebars', engine())
 app.set('view engine', 'handlebars')
 
-app.use(
-  express.urlencoded({
-    extended: true,
-  }),
-)
-
+// Middlewares
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-
 app.use(express.static('public'))
 
-app.use('/', productsRoutes)
+// Rotas
+app.use('/products', productRoutes)
 
-app.listen(3000)
+app.get('/', (req, res) => {
+  res.render('home') // opcional, se existir views/home.handlebars
+})
+
+// Iniciar servidor
+app.listen(3000, () => console.log('🚀 Servidor rodando na porta 3000'))
