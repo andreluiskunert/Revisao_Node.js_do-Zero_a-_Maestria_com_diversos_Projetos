@@ -1,11 +1,12 @@
 const express = require('express')
-const exphbs = require('express-handlebars')
+const { engine } = require('express-handlebars') // ✅ forma correta
 const app = express()
 
 const productsRoutes = require('./routes/productsRoutes')
 
-app.engine('handlebars', exphbs())
+app.engine('handlebars', engine()) // ✅ nova forma
 app.set('view engine', 'handlebars')
+app.set('views', './views') // boa prática, garante caminho correto
 
 app.use(
   express.urlencoded({
@@ -14,9 +15,7 @@ app.use(
 )
 
 app.use(express.json())
-
 app.use(express.static('public'))
-
 app.use('/', productsRoutes)
 
-app.listen(3000)
+app.listen(3000, () => console.log('Servidor rodando na porta 3000 🚀'))

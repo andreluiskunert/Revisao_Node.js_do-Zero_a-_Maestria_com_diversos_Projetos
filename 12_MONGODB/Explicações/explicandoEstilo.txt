@@ -1,0 +1,55 @@
+
+Miniatura da aula
+2:05 / 2:16
+
+Agora galera bem curtinha só pra gente ajeitar os tios aqui do projeto.
+
+Ele vai crescer e a gente vai ter que adicionar cada vez mais estilo pra comportar os outros recursos.
+
+Beleza então eu vou procurar até pra gente adiantar um pouco ainda mais rápido.
+
+Talvez vc aqui a parte de formulário que é bem interessante para todos e quem te fez chegar aqui no
+
+nosso favor.
+
+Vou pegar todo esse cara aqui.
+
+A forma como shows me Veneza procurar deu voz para o nosso estilo Joaquim baixo é só esse cara que.
+
+Da cor eu vou botar cor preta mesmo.
+
+Posso botar também o BTG nesse mesmo rola que vamos ver se ajeitou formulários que a gente fez vou dar
+
+f5 Aqui criar produto já tá legal.
+
+Agora com poucas regras eu consigo deixar como eu quero.
+
+Então vamos lá de novo.
+
+Eu vou só botar uma regra para nossa classe de container a cliente vai dizer que ele vai ter o peixe
+
+de dois em particular todos os cantos tá.
+
+Eu vou também botar um na classe H um botar mais embora.
+
+De M afastar os conteúdos embaixo e ainda os formulários que estão dentro do container.
+
+Eu vou dizer que tenho uma suíte de 300 espécies.
+
+Nem vou sincronizar vão deixar assim mesmo.
+
+Agora está ok vamos manter esse estilo aqui.
+
+O projeto está então bem tranquilo.
+
+Pegamos estes anos algumas propriedades do container que envolve o corpo todo do site na barra estava
+
+pronta adicionou essas classes aqui de fome Control que estavam lá no jatinho do MVC do tio do que a
+
+gente fez.
+
+Só mudei a cor para 000 aqui para não deixar aquele vermelho lá já que o projeto tem outra cara.
+
+Isso aqui pelo menos não fechou a galera que queria fazer de.
+
+Era isso Agora bora prosseguir no nosso novo dB de espero na próxima.
