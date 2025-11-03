@@ -1,0 +1,6 @@
+Editar dado - salvando
+●Para salvar um dado editado será necessário criar um método no Model;
+●Que utiliza o método updateOne do MongoDB;
+●Onde passamos o id e também os dados para atualizar;
+●Criaremos também uma função no Controller e a rota;
+●Vamos ver na prática!
