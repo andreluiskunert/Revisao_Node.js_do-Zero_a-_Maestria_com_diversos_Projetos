@@ -1,0 +1,11 @@
+Instalando o Mongoose
+●
+Nesta sessão vamos adaptar o projeto de MongoDb para utilizar o
+Mongoose;
+●O primeiro passo é instalar o pacote e fazer a conexão com o banco;
+●O nome do pacote é mongoose;
+●Vamos precisar fazer algumas alterações no nosso arquivo conn.js, que
+é a ponte entre nossa aplicação e o DB;
+●
+Vamos ver na prática!
+Ex.:
