@@ -1,0 +1,7 @@
+Criando o Schema
+●
+Agora vamos criar uma parte muito importante das aplicações que tem o
+Mongoose: o Schema;
+●Que é um esqueleto do nosso elemento a ser inserido na collection;
+●Vamos criá-lo no Model da aplicação;
+●Vamos ver na prática!
