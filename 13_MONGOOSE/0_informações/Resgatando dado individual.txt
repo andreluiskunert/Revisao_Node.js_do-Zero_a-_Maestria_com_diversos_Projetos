@@ -1,0 +1,8 @@
+Resgatando dado individual
+●Para encontrar um único item vamos utilizar o método findById;
+●Neste caso não precisamos converter o id para o padrão do MongoDB,
+o Mongoose faz isso para nós;
+●E também utilizaremos o lean novamente;
+●Vamos ver na prática!
+Ex.:
+->
