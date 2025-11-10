@@ -65,17 +65,4 @@ module.exports = class ToughController {
 
     res.redirect('/')
   }
-  static async editProductPost(req, res) {
-    const id = req.body.id
-    const name = req.body.name
-    const price = req.body.price
-    const description = req.body.description
-    const image = req.body.image
-
-    const product = new Product(name, price, description, image)
-
-    await product.updateProduct(id)
-
-    res.redirect('/')
-  }
 }
