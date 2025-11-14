@@ -1,0 +1,7 @@
+Testando rota com Postman
+●Para acessar uma rota com o Postman precisamos configurar o client;
+●Devemos inserir o verbo correto para a rota;
+●E também configurar o endpoint, que é a URL onde nossa rota foi
+estabelecida;
+●Enviando a requisição, receberemos a resposta;
+●Vamos ver na prática!
