@@ -1,0 +1,143 @@
+Fraga pode então começar o nosso projeto do curso do projeto mais completo dele ou ele vai trabalhar
+
+com várias tecnologias diferentes Front separado do back front com Reaction que também aqui está bem
+
+quente para o novo DS Express.
+
+Seguindo arquitetura MVC é trabalhada com o banco de dados com o BB utilizando módulos acontece o projeto
+
+injeta Pet ou seja o sistema de adoção de PET que pode quem pode fazer o que pode fazer o nosso cadastro
+
+no sistema.
+
+Por exemplo até que João botava um telefone aqui.
+
+Algum e-mail.
+
+Bogotá uma senha.
+
+E aí quando eu faço o cadastro é melhor fazer login e aprender autenticação com o Direct Now de como
+
+ela é como interagir como realizar esse processo.
+
+Também vai ter a possibilidade de alterar o perfil do usuário colocando foto.
+
+Então vou colocar aqui uma proxies venha daí ele faz o preview da foto.
+
+A gente pode alterar dados não é necessário digitar ele vai completar a foto e bem trabalho faz semestres
+
+para comunicar o usuário.
+
+Você dá F5 agora os dados já persiste.
+
+Poderia ter meu e-mail para só um teste o atualizou ainda persistindo dado beleza e aí ver as outras
+
+áreas do sistema que vai ter áreas de administrativas com o esporte para pets cadastrados ou seja que
+
+a gente disponibiliza para adoção e também porque a gente vai adotá lo de todo o processo de adoção.
+
+Só que caia do tema.
+
+Geralmente quando acontece as ações desses sistemas é agendada uma visita.
+
+O que está lotando o cachorro vê o gato enfim vê se a pessoa tem condições para receber esse animal
+
+então a gente vai trabalhar com isso também.
+
+A gente vai ter essa lista exibindo os pets mas primeiro vamos cadastrar o nosso aqui para ver como
+
+é que fica.
+
+Então a gente vai ver que não tem Pet cadastrado e não se cadastrar.
+
+Então aqui o usuário a gente tinha o upload singular de fotos que a gente aprende também.
+
+Então esqueci de falar e aqui o espécime vai ter múltiplo e subir uma ou mais fotos e Harriet no jazz.
+
+Então aqui eu tenho algumas fotos que a gente pode colocar por exemplo colocar esse quadro aqui está
+
+data votação.
+
+Eu vou botar um nome Shazam por exemplo e eu botar que ele tem cinco anos e 12 quilos e que eu posso
+
+selecionar uma categoria que estava errado não é uma cor.
+
+Então era só um detalhe e caramelo me mesclado.
+
+Então quem vai dar o cadastrar é automaticamente o carro para depois.
+
+Agora com o meu pet cadastrado a gente pode excluir ou editar novamente dados deletar o que acontece
+
+quando cadastra o Pet e na então outras pessoas podem solicitar uma visita que seria iniciar o processo
+
+de adoção.
+
+Eu percebo qual sistema ele tem uma certa complexidade e se eu solicita para o meu pet ele vai me dar
+
+um erro que seu outro usuário agendar uma visita por exemplo aqui.
+
+Eu tenho quatro peças disponíveis que já foi adotado.
+
+Ou seja já passou todo o processo.
+
+Então vamos trabalhar com Bonnie por exemplo.
+
+Eu quero adotar esse cara aqui então vou solicitar uma visita.
+
+Aí me dá uma mensagem de sucesso onde ele manda o contato do usuário beleza.
+
+Mas ali aparece uma rápida pesquisa do site Cnet.
+
+Então eu vou realmente ter os dados aqui em minhas adoções para poder conferir e ligar para pessoa para
+
+agendar a visita.
+
+Aí eu tenho que solicitar nova visita ele já vai dar um erro então onde é bastante caro validações também
+
+que é bem importante e que em minhas adoções fique ao lado da pessoa onde ele disponibilizou o telefone
+
+e o nome dela.
+
+A gente vai ligar e tentar mudar o processo de adoção e marcar a visita algo que aconteceria offline.
+
+Aí vão pular para esse processo para o lugar agora como outro usuário vai fazer o login aqui.
+
+Vou fazer o login com o usuário que é dono daquele cachorro que é esse meio aqui está.
+
+Aí eu vou enviar o login fez login e aqui eu tenho meus pets então ele quis adotar o bone.
+
+Como é que muda um pouco o.
+
+Se alguém já tem alguém que solicitou a adoção o charque já foi adotado e o Boni também solicitou doação.
+
+Então eu vou dizer que aquela visita lá deu certo e o Boni vai ser adotado.
+
+O que acontece ao clicar em relação a ele vai dizer parabéns pela adoção foi finalizado com sucesso
+
+então teoricamente agora eu já posso entregar o Boni lá para pessoa que é doutor.
+
+E aí quando a gente na rua ele era adotado então é basicamente esse o ciclo que a gente vai ter nossa
+
+aplicação todas as funcionalidades que a gente vai aprender.
+
+Cara que eu falei de forma resumida eu só apresentei o projeto para vocês.
+
+Agora meu programa todo ele na prática é como se pode perceber todas as ações aqui são feitas com recurso
+
+a já utilizando o Axis que é uma biblioteca.
+
+Depois então a gente vai ter a possibilidade de trabalhar com back end primeiro e depois com Front.
+
+Então ele ia fazer 95 por cento das possibilidades como onde a gente ia até a estrutura base para começar
+
+e nem se falta alguma coisa o que é que pode ser que falte depois aí ao longo do projeto o front Back.
+
+A ideia é trabalhar essa forma separada e ver como é que funciona.
+
+Não utilizar bastante o post e poder fazer o teste das APIs e depois que vai concluir o front end para
+
+chegar nesse resultado aqui.
+
+Beleza então é o sistema que é tapete borda proximal já que é o nosso projeto começar todas as configurações
+
+necessárias para lá.
