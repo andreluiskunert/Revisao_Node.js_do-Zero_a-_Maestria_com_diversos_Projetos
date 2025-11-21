@@ -1,0 +1,173 @@
+E agora galera a índia vai fazer os modelos Star e a Conexão Cuba então primeiro começar pela conexão
+
+porque a gente precisa dela para criar os módulos que eu vou criar um arquivo chamado com.br por ainda
+
+fazer algo muito parecido com o que a cessão de uma usina criou aquele nosso projeto.
+
+Na verdade mudou aquele projeto de mão de obra.
+
+Então vou chamar o pacote para o uso que a gente baixou.
+
+Eu vou criar uma função super fashion um onde eu vou esperar minha conexão com o Connect e o banco vai
+
+estar aqui no meu local Russo então eu vejo o serviço está habilitada e no caso do Linux tem que habilitar
+
+isso no Windows para instalá lo corretamente tb.
+
+Então que a gente sabe que ele fica na porta 27 17 e eu vou colocar o banco chamado Get aperte.
+
+Ela vai criar nossos dados no Oscar aqui depois ainda conseguir vê la no Copas.
+
+Está tudo certo ele vai botar um coletou álbum Luz.
+
+E aqui depois vou ativar essa função de bem e se der algum erro nela eu vou pela Inglaterra.
+
+Até lá essa terra boa pra gente saber o que aconteceu consegui resolver e aqui eu dou esportes uma.
+
+Então aqui acontece eu tem esse Musa conectado porque transportando ele mas ele espera essa conexão
+
+acontecer que depois eu consigo fazer qualquer coisa.
+
+A partir dessa conexão aí já pronta.
+
+Então em moda ele vai criar dois modos nosso sistema que a gente possui que é o uso DS e também o.
+
+Então apesar de a questão dos modos ser simples eu vou aproveitar para explicar que cada campo vai representar
+
+e assim ele consegue entender melhor a aplicação.
+
+Como eu expliquei os conceitos de MVC então vou chamar que eu assuma o uso que vai ser aquela conexão
+
+uma pasta de bacon e eu vou chamar também um esquema para poder criar esquemas aqui com longos meses.
+
+Eu sei que vou criar constante que vai ser um dos modelos.
+
+E eu vou exportar depois moda esportes.
+
+Então depois ele vai poder utilizar essa carona nas rotas lá no controle.
+
+E aqui a gente vai chamar o modelo de índia com O maiúsculo e eu vou criar um único esquema onde ele
+
+vai ter os campos os típicos nos campos.
+
+Então ele vai ter o primeiro campo chamado nem que o nome de usuário desse que e nem o que falar.
+
+Seu tipo string quartet depois Blatter disse por e-mail que vai resgatar o e-mail do usuário que vai
+
+ser necessário para fazer o login dele certo.
+
+Então vai ter também um quadro com muito na verdade que é chutar.
+
+Então o e-mail vai servir para autenticação.
+
+Ser também a proteção do tal tipo string também recorde em que precisa ser do usuário.
+
+Depois de ter a imagem a imagem não sei se vocês já sabem mas a gente salva como o caminho dela.
+
+Não há imagem sílaba.
+
+Então esse campo também é um tipo string e não é porque vocês viram que no cadastro o usuário não pede
+
+o cadastro embaixo mas depois quando altera o perfil a gente pode colocar.
+
+Então ele vai deixar o opcional e eu também vou ter o fone que o telefone do usuário tipo string.
+
+Esse cara também vai ser iguais porque a forma que a gente tem como estabelecer uma conexão entre o
+
+adotante e também a pessoa cadastrou Pet.
+
+E aqui eu vou botar um outro falando que não viu ainda pai nos tempos com o tio que eu tenho que ficar
+
+aqui e vai basicamente criar duas colunas novas entre aspas dos Campos Novos que vai ser o created e
+
+o app dentro.
+
+Toda vez que o registro foi criado com o beiçola ele vai marcar uma data e depois toda vez que o registro
+
+foi atualizado ele vai ter essa data da coluna.
+
+Então é bom pra gente ter esses parâmetros de quando foi criado e quando ele foi atualizado é uma funcionalidade
+
+que uma uso nos dá de mão beijada digamos assim.
+
+Basicamente isso aqui e já fica prontinho galera então agora vamos lá criar o clima do pet.
+
+A gente pode.
+
+Até para encurtar um pouco quem tem digitada o controle copia tudo aqui e aqui a gente só vai.
+
+E o que me disse que esse objeto aqui.
+
+Refazer tudo está a fazer algumas mudanças aqui por exemplo pode se dizer e vez aqui vou botar repete.
+
+A constante Pet Model Pet e exporta o Pet está importa a conexão e também o esqui.
+
+Aqui no esquema de recolocar os campos tem de bater nele também.
+
+Se Dilma tem um nome para o bichinho
+
+eu vou ter.
+
+Eis que seria a idade.
+
+Então vou tentar opinando e botar a idade em números inteiros ok.
+
+E faz show porque a pessoa está voltando geralmente ela tem que ter algumas informações.
+
+Por exemplo tem gente que quer pegar um animal mais novo.
+
+Claro que às vezes isso não é interessante e vai começar a limitar os pets mais velhos.
+
+Se a pessoa com sistema ganha o peso é interessante porque se eu passo por exemplo um peso muito grande
+
+não tem esse espaço que é fato às vezes em de casa ou no apê.
+
+Aí trompete gigante né.
+
+Então é bom a gente ter que o ET também como um número inteiro não vai dizer que ele.
+
+E eu vou ter também a cor a corrida e fazer com que o que sei lá que vocês verão string School.
+
+E eu vou ter as imagens aqui como é que funciona.
+
+As imagens vão ser múltiplas.
+
+Como é que eu posso levar múltiplos dados em um canto.
+
+Eu vou colocar o REI TIPO REI E também vai ser tio Rei mas tem que ver a imagem para cadastrar e eu
+
+vou ter um outro campo chamado a Vila do que acha que é o status do Pet ou ele tá falso como se não
+
+tivesse mais disponível o tatu verdadeiro o PETA disponível.
+
+é esse cara que te muda como pessoa faz blefando quando alguém adota ele pra sumir lá da rua o Botafogo
+
+está lotado para não ficar incomodando a pessoa que disponibilizou quando solicitado.
+
+Tá tá aí eu vou ter dois objetos o usuário eu vou inseri lo aqui eu não vou fazer o relacionamento entre
+
+Collection vou fazer inserir o usuário aqui vou botar algumas informações ou digitar que precisa do
+
+nome e telefone para contato.
+
+Eu também vou passar o adoptem vai ser outro objeto que vai ser o adotante.
+
+Então eu também vou ter algumas informações de que adotou esse pet e que eu botei os tempos de jogo
+
+para marcar a data de criação e de atualização do nosso animalzinho.
+
+Também galera agora tem o projeto bem configurado em questões de moda e de negócios entre aspas e também
+
+a inicialização dela.
+
+Inês descobriu que queria aparecer de vez na viagem.
+
+Na verdade não existe essa pasta porque a gente vai trabalhar com gente que emoção mesmo.
+
+Mas nem assim consegue.
+
+Aí como eu estava dizendo a gente tem tudo configurado para poder começar o código as funções na Praça
+
+Mauá onde começa com rotas de usuário e ainda pelo caminho da autenticação alteração de usuário.
+
+Depois de estar por lá.
