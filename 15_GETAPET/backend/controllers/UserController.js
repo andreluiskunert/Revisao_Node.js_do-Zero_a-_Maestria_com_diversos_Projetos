@@ -233,3 +233,4 @@ module.exports = class UserController {
     }
   }
 }
+// criar a chamada como Postman
