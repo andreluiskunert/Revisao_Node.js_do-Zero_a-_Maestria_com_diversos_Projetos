@@ -1,0 +1,135 @@
+Então vamos lá galera a gente não pára agora até a gente registrar o usuário no banco e a gente vai
+
+ter ele com a senha correta tá é criptografada e ainda ter como logar ele posteriormente.
+
+Esse processo de Logar a gente vai fazer ainda na opção de registro ou seja mais uma aula mas se usa
+
+desligado digamos assim ele não vai conseguir logar com quem já vai ter no banco ao fim da sala.
+
+Então a primeira coisa que tem que fazer é criar a senha.
+
+Por que eu não vou criar sete está passando sempre a gente nunca salva a senha dele no banco a gente
+
+vai criptografar para botar algum algoritmo em cima que é o Eclipse e aí começa repete se dia vazar
+
+a senha dele mas não vai comprometer os dados do usuário.
+
+Então o que eu vou fazer aqui eu vou fazer um salto primeiro ciclo e fortificar a senha dele porque
+
+além do algoritmo eu estou utilizando uma string a mais que eu vou botar um valor 12 ou seja 12 caracteres
+
+a mais essa sim é mais complicada ainda mas se a pessoa tiver tentando fazer engenharia reversa ela
+
+vai ter que saber todos parados que eu utilizei e que dificulta muito mais rápido.
+
+E agora sim eu vou criar o Pessoa de haxixe que seria a senha só criptografada.
+
+Eu vou dar um White aqui de novo clipe tipo o haxixe e vou passar a minha senha e o Salt que eu vou
+
+ter uma super série.
+
+Aí eu vou criar o usuário.
+
+Porque eu já tenho os dados dele isoladamente mas vai ter que criar um novo objeto.
+
+Então qual é usa igual a mil e USA.
+
+é que eu vou botar.
+
+Que nem melhor nem o e-mail é igual ao e-mail o fone é igual a fone eu peço te peço que esta tome cuidado
+
+aqui porque eu tenho que passar a senha e a e não igual.
+
+Que o usuário passou quando os nomes são igual a da palavra igual ao nome da chave eu posso só colocar
+
+onde ele está.
+
+O resto não dá porque é diferente.
+
+Então paciente criou o usuário e eu vou ter que dar um sem fim.
+
+Então vou botar um trackpad aqui para.
+
+Acusar algum erro.
+
+Se der problema não investir em salvar o usuário ou daquele reles status.
+
+Quinhentos um erro de servidor de um módulo mestre gera um problema para imprimir e daí talvez se eu
+
+não seja interessante mostrar para o usuário deveria estar de alguma forma.
+
+Mas vamos ver o que acontece.
+
+Eu vou salvar o usuário que é uma nova variável que vai ser um ao Eixo e os 100 metros do lado não uso.
+
+Então isso aqui já deve estar enviando o usuário para o banco.
+
+Então vamos ver se a gente consegue concluir nosso objetivo mensal aqui salvando o registro até o retorno
+
+aqui.
+
+Ou posso por enquanto colocar uma mensagem que.
+
+Um status de 201 usuário criado depois de uma mulher nesta quinta.
+
+Não posso mandar este usuário não só pra gente ver.
+
+E aí vamos ver o que acontece lá no posto.
+
+Então agora vou.
+
+Só mudar esse meio que eu vou usar esse cara depois como um dos meus meias de referência.
+
+Vou botar um CD que está e a gente pode dar um contra o Aécio para salvar o meu mestre e ele ficar cépticos
+
+parentes já salvos para futuramente a gente alterar utilizar e tudo mais.
+
+Então eu vou dar um send aqui.
+
+E a princípio de algum erro.
+
+Olha só alguém aqui.
+
+Clipes de farto beleza é interessante porque gente não importou equipes vão lá em cima vamos cortar
+
+o que a gente precisa que quer a meio da noite então a gente vai utilizar esse pacote no portal dele.
+
+Agora vamos ver se vai.
+
+Sai melhor repetindo.
+
+Agora eu um usuário criado e eu recebo o objeto dele como reitor.
+
+Esse cara que está no banco como é que a gente vai revisar.
+
+Deu certo se não deu.
+
+Gente não tem sistema ainda então a gente vai abrir o copo com aquele software que te instalou lá nas
+
+aulas de como DB para poder ver os bancos e tabelas conecta aqui com o local Rust mesmo é que eu vou
+
+atender os bancos mas a gente vai entrar no tapete que é o que interessa.
+
+Tem um DOC ou seja salvou minha.
+
+De fato.
+
+Então ele só tenho os olhos salvo com a pecha aqui no e-mail dele então quando a gente vai fazer o login
+
+os dados serão esses aqui.
+
+Peça de e-mail.
+
+Isso aqui galera eu já quero logar o usuário quando ele fizer o registro porque é interessante senão
+
+ele vai ter que fazer dois processos ele vai ter que criar o usuário e depois fazer o registro.
+
+Então a gente vai ter uma próxima aula para retornar na verdade o token dele que é o que a gente precisa
+
+do fronte para ter informação que o usuário está autenticado ou não.
+
+Então ele queria fazer da próxima aula que é uma função que vai retornar o toque para essa resposta
+
+que a gente fez para se tornar usuária.
+
+Então bora lá ver como é que vai ficar essa função a principal.
