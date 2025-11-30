@@ -1,0 +1,76 @@
+boa noite como resolver isso desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+/Revisao_Node.js_do-Zero_a-_Maestria_com_diversos_Projetos/15_GETAPET/backend$ npm start
+
+> backend@1.0.0 start
+> nodemon ./index.js localhost:5000
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter rs
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting node ./index.js localhost:5000
+[nodemon] Internal watch failed: ENOSPC: System limit for number of file watchers reached, watch '/home/desenvolvedor/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+/Revisao_Node.js_do-Zero_a-_Maestria_com_diversos_Projetos/15_GETAPET/backend/controllers/UserController.js'
+desenvolvedor@desenvolvedor-ThinkPad-T440p:~/Cursos_Hora de Codar/Revisao_Node.js_do Zero_a _Maestria_com_diversos_Projetos
+/Revisao_Node.js_do-Zero_a-_Maestria_com_diversos_Projetos/15_GETAPET/backend$   ?
+ChatGPT said:
+
+Esse erro é clássico no Linux quando usamos nodemon, Vite, Angular, React, ou qualquer ferramenta que observa muitos arquivos.
+
+✅ Erro:
+ENOSPC: System limit for number of file watchers reached
+
+
+Significa que o sistema Linux atingiu o limite máximo de arquivos que podem ser monitorados ao mesmo tempo.
+
+Mas é muito fácil corrigir.
+
+✅ SOLUÇÃO DEFINITIVA (Aumentar o limite do sistema)
+
+Cole este comando no terminal:
+
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+✔ O que ele faz?
+
+aumenta o limite de watchers para 524.288 arquivos
+
+recarrega as configurações (sysctl -p)
+
+Depois disso, rode novamente:
+
+npm start
+
+☑️ SOLUÇÃO TEMPORÁRIA (sem salvar no sistema)
+
+Se quiser apenas testar:
+
+sudo sysctl fs.inotify.max_user_watches=524288
+
+
+Mas quando reiniciar o PC, o problema volta.
+
+🧪 SOLUÇÃO EXTRA (se usar VS Code + muitos projetos abertos)
+
+Se usar VS Code, ele também consome watchers.
+
+Você pode liberar watchers fechando pastas no VS Code:
+
+VS Code → File → Close Folder
+
+👌 Depois de fazer isso:
+
+Seu nodemon vai operar normalmente:
+
+[nodemon] starting `node ./index.js localhost:5000`
+Servidor rodando...
+
+
+Se quiser, posso verificar também seu index.js ou seu projeto GETAPET e apontar possíveis problemas. Só enviar!
+
+Do you like this personality?
+
+
+
+
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
