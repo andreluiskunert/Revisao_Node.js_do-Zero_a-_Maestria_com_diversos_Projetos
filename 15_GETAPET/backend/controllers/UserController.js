@@ -58,7 +58,7 @@ module.exports = class UserController {
       return
     }
 
-    // create password
+    // create password_terça-feira,02/12
     const salt = await bcrypt.genSalt(12)
     const passwordHash = await bcrypt.hash(password, salt)
 
