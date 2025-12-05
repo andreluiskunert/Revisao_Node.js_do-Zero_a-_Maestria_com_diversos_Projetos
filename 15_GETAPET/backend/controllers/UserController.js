@@ -232,4 +232,6 @@ module.exports = class UserController {
       res.status(500).json({ message: error })
     }
   }
+  //  quinta-feira, 04/12/2025_de noite
+// já fiez
 }
