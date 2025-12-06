@@ -1,0 +1,119 @@
+Então galera agora vamos lá por login.
+
+Mas não vai acontecer esse cara vai ter que fazer algumas validações também e depois passar o token.
+
+Quando o usuário logar então não tinha uma ideia mais ou menos que fazer assim que parte dessa estética
+
+simples.
+
+Plug in other Request é aqui a mesma coisa a gente vai receber e-mail e senha então pode fazer com.
+
+Meio péssima.
+
+Eles vêm todo de ré que Barilla e que o fazem avaliações que são bem semelhantes ali de cima a gente
+
+pode copiar aqui uma.
+
+Então se não vai e-mail coisa errada é meio obrigatório sim ouvem se nove peças.
+
+é obrigatório ser obrigatório e já pode começar os nossos testes o que faltou que também faltou com
+
+a gente que é a rota.
+
+Eu vou criar uma outra rota POST PARA BARRAR login que executa a função ali.
+
+Então no post a gente pode ser aqui que é o único reconhece Barra e os apps Barra login Post e o botão
+
+LOL e login.
+
+Não precisa da Barra.
+
+Então salvo aqui vou embora ao som e não enviar e-mails validação e-mail e até e-mail.
+
+Tem um padrão de som eu posso utilizar esse meio aqui galera já vai ajudar a gente vai lidar com ele.
+
+Ele adora peças péssimas que beleza um jeito de Pollock finita de Woody é finito.
+
+Ok agora no login acontece uma situação contrária porque preciso ter usuário tem que garantir que usuário
+
+existe a gente pode chegar aqui copiar essa validação poderia virar função quando está se repetindo
+
+assim.
+
+é interessante.
+
+é aí que eu vou fazer.
+
+Se o usuário não existia agora o que era o contrário ou daqui se o usuário não existir eu vou mudar
+
+o nome do bairro para o que eu quero utilizá.
+
+Em outro aspecto depois ele vai chamar de usuário porque se achou eu vou aproveitar ela tá.
+
+Aí eu vou mandar uma mensagem porque não tem usuário de conhecimento que não há usuário cadastrado.
+
+Este e-mail.
+
+Ele pode fazer isso também.
+
+Vou chegar aqui vão botar um CD 2 3.
+
+Não sente não tem.
+
+Caiu no erro na validação ali.
+
+Beleza tudo certo.
+
+Agora eu vou fazer o seguinte vou ter que ver se a senha do usuário é mais uma validação bateu com a
+
+senha na caçamba.
+
+Isso é o que faz o xeque mate iPhone.
+
+Peço ao senhor a senha do banco de dados bater com a ser enviada para o site.
+
+Então eu vou dar um xeque peço a ele aqui está que vai ser um método de Eclipse Coupé.
+
+Eu simplesmente passo a senha.
+
+E aí usa a.
+
+Então eu já tenho usuário.
+
+Estou aproveitando ele aqui para chamar atributo peças e eu possa ser aquilo que veio lá do front e
+
+isso é entender o que foi feito no algoritmo consegue criptografar comparar e mexer.
+
+Então se der errado e checa peça com a negação que seja não falso eu vou mais uma vez.
+
+é tornar algo que eu vou votar assim sem igual.
+
+Então posso chegar aqui agora vi que secou no teste 2 3 eu vou colocar o teste nos 3 no.
+
+A ata só deixa eu votei nele.
+
+Beleza ou que deu certo.
+
+Agora se eu boto a C é certo se não comparece aqui para reiniciar.
+
+Bater cerrada para sair sem igual.
+
+Todas as minhas variações eu conto só logo se o usuário mandou um já que existe uma senha que existe
+
+como é que oficializa esse ciclo aqui toda noite.
+
+Cheque usa estou aqui e mando em uso em 2012.
+
+E aí eu consigo logar aqui também pelo login que é a função que primariamente se logra tema controverso
+
+aqui ao ver com os dados corretos se eu não sei onde ele vai logar então agora depois da índia fazer
+
+esse gerenciamento aí de Tolkien para conseguir também trabalhar com usuários ligados por exemplo na
+
+atualização de usuário eu vou querer que ele esteja logado e aí faça as modificações então vai precisar
+
+lidar com isso aqui no post mas eu também vou estar vocês para vocês aprenderem isso o que é bem interessante
+
+está fechado agora fizemos o login.
+
+Bora partir pra próxima função aqui de uso.
