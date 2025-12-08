@@ -112,6 +112,7 @@ module.exports = class UserController {
 
     await createUserToken(user, req, res)
   }
+  // revisão_Domingo,07/12/2025
 
   static async checkUser(req, res) {
     let currentUser
