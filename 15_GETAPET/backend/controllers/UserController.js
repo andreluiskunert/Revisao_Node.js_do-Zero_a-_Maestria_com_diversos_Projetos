@@ -4,10 +4,10 @@ const jwt = require('jsonwebtoken')
 const User = require('../models/User')
 
 // helpers
-// // const getUserByToken = require('../helpers/get-user-by-token')
-// const getToken = require('../helpers/get-token')
-// const createUserToken = require('../helpers/create-user-token')
-// const { imageUpload } = require('../helpers/image-upload')
+const getUserByToken = require('../helpers/get-user-by-token')
+const getToken = require('../helpers/get-token')
+const createUserToken = require('../helpers/create-user-token')
+const { imageUpload } = require('../helpers/image-upload')
 
 module.exports = class UserController {
   static async register(req, res) {
