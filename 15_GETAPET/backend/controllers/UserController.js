@@ -118,7 +118,7 @@ module.exports = class UserController {
     let currentUser
 
     console.log(req.headers.authorization)
-
+  // Terça-feira,09/12/2025_De noite "Revisão de Código"
     if (req.headers.authorization) {
       const token = getToken(req)
       const decoded = jwt.verify(token, 'nossosecret')
