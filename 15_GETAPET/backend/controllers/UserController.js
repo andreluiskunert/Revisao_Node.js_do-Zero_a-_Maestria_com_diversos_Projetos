@@ -124,7 +124,7 @@ module.exports = class UserController {
       const decoded = jwt.verify(token, 'nossosecret')
 
       currentUser = await User.findById(decoded.id)
-
+//   quarta-feira, 10/12/2025_De noite "Revisão de Códigos..."
       currentUser.password = undefined
     } else {
       currentUser = null
