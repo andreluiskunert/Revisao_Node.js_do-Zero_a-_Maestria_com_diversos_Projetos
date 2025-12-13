@@ -142,7 +142,7 @@ module.exports = class UserController {
       res.status(422).json({ message: 'Usuário não encontrado!' })
       return
     }
-
+    // sexta-feira, 12/12/2025_de noite
     res.status(200).json({ user })
   }
 

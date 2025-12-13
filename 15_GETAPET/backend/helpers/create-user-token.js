@@ -1,7 +1,7 @@
-const jwt = require("jsonwebtoken")
+const jwt = require("jsonwebtoken");
 
-const createUserToken = async(user, req, res) =>{
-      const token = jwt.sign(
+const createUserToken = async (user, req, res) => {
+  const token = jwt.sign(
     // payload data
     {
       name: user.name,
@@ -16,6 +16,6 @@ const createUserToken = async(user, req, res) =>{
     token: token,
     userId: user._id,
   });
+};
 
-}
-module.exports = createUserToken
+module.exports = createUserToken;
