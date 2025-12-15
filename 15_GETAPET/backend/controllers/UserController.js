@@ -58,7 +58,7 @@ module.exports = class UserController {
       return
     }
 
-    // create password_terça-feira,02/12
+    // create password
     const salt = await bcrypt.genSalt(12)
     const passwordHash = await bcrypt.hash(password, salt)
 
@@ -78,8 +78,7 @@ module.exports = class UserController {
       res.status(500).json({ message: error })
     }
   }
-  //  revisão de códigos_Sábado06/12/2025_De noite
-  
+
   static async login(req, res) {
     const email = req.body.email
     const password = req.body.password
@@ -112,19 +111,18 @@ module.exports = class UserController {
 
     await createUserToken(user, req, res)
   }
-  // revisão_Domingo,07/12/2025
 
   static async checkUser(req, res) {
     let currentUser
 
     console.log(req.headers.authorization)
-  // Terça-feira,09/12/2025_De noite "Revisão de Código"
+
     if (req.headers.authorization) {
       const token = getToken(req)
       const decoded = jwt.verify(token, 'nossosecret')
 
       currentUser = await User.findById(decoded.id)
-//   quarta-feira, 10/12/2025_De noite "Revisão de Códigos..."
+
       currentUser.password = undefined
     } else {
       currentUser = null
@@ -142,7 +140,7 @@ module.exports = class UserController {
       res.status(422).json({ message: 'Usuário não encontrado!' })
       return
     }
-    // sexta-feira, 12/12/2025_de noite
+
     res.status(200).json({ user })
   }
 
@@ -234,6 +232,4 @@ module.exports = class UserController {
       res.status(500).json({ message: error })
     }
   }
-  //  quinta-feira, 04/12/2025_de noite
-// já fiez
 }
