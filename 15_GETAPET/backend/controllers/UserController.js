@@ -16,8 +16,7 @@ module.exports = class UserController {
     const phone = req.body.phone
     const password = req.body.password
     const confirmpassword = req.body.confirmpassword
-    //  const {name, email, phone, password, confirmpassword} = req.body 
-    // revisão Domingo 28/12/2025
+
     // validations
     if (!name) {
       res.status(422).json({ message: 'O nome é obrigatório!' })
