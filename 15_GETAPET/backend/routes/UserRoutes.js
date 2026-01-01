@@ -16,5 +16,18 @@ router.patch(
   imageUpload.single("image"),
   UserController.editUser
 );
-
 module.exports = router;
+// <!DOCTYPE html>
+// <html lang="en">
+
+// <head>
+//     <meta charset="utf-8">
+//     <title>Error</title>
+// </head>
+
+// <body>
+//     <pre>Cannot POST /users/register</pre>
+// </body>
+// obs.: buscar solução de noite 
+
+// </html>
