@@ -89,7 +89,7 @@ module.exports = class UserController {
 
     await createUserToken(user, req, res)
   }
-
+  //  quarta-feira,07/01/2026_De noite_
   static async checkUser(req, res) {
     let currentUser
 
