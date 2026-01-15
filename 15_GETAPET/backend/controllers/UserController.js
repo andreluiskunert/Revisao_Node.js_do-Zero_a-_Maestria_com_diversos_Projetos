@@ -130,7 +130,7 @@ module.exports = class UserController {
 
     res.status(200).send(currentUser)
   }
-
+  //  Quarta-feira,14/01/2026_De noite
   static async getUserById(req, res) {
     const id = req.params.id
 
