@@ -1,13 +1,6 @@
-const router = require("express").Router();
+// Revisão de error pra correção de código_quinta-feira,15/01/2026_de noite
+const router = require('express').Router()
+const UserController = require('../controllers/UserController')
+router.post('/register', UserController.register)
 
-const UserController = require("../controllers/UserController");
-
-
-router.post("/register", UserController.register);
-router.post("/login", UserController.login);
-router.get("/checkuser", UserController.checkUser);
-router.get("/:id", UserController.getUserById);
-
-
-
-module.exports = router;
+module.exports = router
