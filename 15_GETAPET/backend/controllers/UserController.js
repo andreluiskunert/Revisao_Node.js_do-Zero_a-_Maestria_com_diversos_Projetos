@@ -23,8 +23,6 @@ module.exports = class UserController {
       return res.status(422).json({ message: 'As senhas não conferem' })
     }
 
-    // (continua amanhã 😄)
-    return res.status(201).json({ message: 'Usuário validado com sucesso' })
   }
 }
 
