@@ -3,18 +3,18 @@ const cors = require('cors')
 
 const app = express()
 
-// config JSON response:
+// 🔴 ESSENCIAL — habilitar leitura de JSON
 app.use(express.json())
 
-// solve CORS:
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
+// (opcional, mas recomendado)
+app.use(express.urlencoded({ extended: true }))
 
-// Public folder for images:
-app.use(express.static('public'))
+app.use(cors())
 
-// Routes:
+// rotas
 const UserRoutes = require('./routes/UserRoutes')
 app.use('/users', UserRoutes)
 
-// Aqui a porta:
-app.listen(5000)
+app.listen(5000, () => {
+  console.log('Servidor rodando na porta 5000')
+})
