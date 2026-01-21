@@ -1,4 +1,5 @@
 // Segunda-feira, 05/01/2026
+// Revisão_Terça-feira,20/01/2026
 const jwt = require("jsonwebtoken")
 const createUserToken = async(user, req, res) => {
 
