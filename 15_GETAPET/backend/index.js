@@ -13,6 +13,9 @@ app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
 app.use(express.static('public'))
 
 // Routes
+// Sabádo, 31/01/2026_de manha
+const UserRoutes = require('./routes/UserRoutes')
+app.use('/users', UserRoutes)
 
 //  Estou buscando conexão com o Banco de Dados usando https://cloud.mongodb.com/v2#/org/684e1fcfc80840285f0b1f04/projects
 

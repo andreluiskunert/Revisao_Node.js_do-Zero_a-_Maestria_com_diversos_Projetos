@@ -2,7 +2,7 @@ const mongoose = require('../db/conn')
 const {schema} = mongoose
 const User = mongoose.model(
     'Pet',
-    new schema({
+    new Schema({
        name:{
             type: String,
             required: true

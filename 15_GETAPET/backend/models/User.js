@@ -1,31 +1,33 @@
 const mongoose = require('../db/conn')
-const {schema} = mongoose
-const User = mongoose.model(
-     'User',
-    new schema({
-        name:{
-            type: String,
-            required: true
-        },
-        email: {
-             type: String,
-            required: true
+const { Schema } = mongoose
 
-        },
-        password: {
-            type: String,
-            required: true
-        },
-        imagem: {
-            type: String
-        },
-        phone:{
-            type: String,
-            required: true
-            
-        },
-        
-    }, {timestamps: true}, 
- ),
+
+const User = mongoose.model(
+  'User',
+  new Schema(
+    {
+      name: {
+        type: String,
+        required: true
+      },
+      email: {
+        type: String,
+        required: true
+      },
+      password: {
+        type: String,
+        required: true
+      },
+      imagem: {
+        type: String
+      },
+      phone: {
+        type: String,
+        required: true
+      }
+    },
+    { timestamps: true }
+  )
 )
+
 module.exports = User
