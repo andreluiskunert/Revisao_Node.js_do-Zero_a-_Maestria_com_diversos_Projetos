@@ -1,0 +1,277 @@
+o mongodb não funciona no Xubuntu como posso resolve isso de forma rapida em poucas linhas de códigos
+
+Boa noite 👍
+Vou te responder bem direto (poucas linhas) — porque no Xubuntu/Ubuntu isso costuma dar dor de cabeça mesmo.
+
+👉 Primeiro: não é “que não funciona”.
+Normalmente o problema é que algumas versões do Ubuntu/Xubuntu não têm suporte direto nos pacotes antigos (dependências tipo libssl1.1 quebram a instalação).
+
+Então o jeito rápido e confiável hoje é:
+
+✅ Opção rápida (recomendada — poucas linhas)
+
+Instalar via repositório oficial (MongoDB Community)
+
+sudo apt update
+sudo apt install -y gnupg curl
+
+curl -fsSL https://pgp.mongodb.com/server-8.0.asc | \
+sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg --dearmor
+
+echo "deb [ arch=amd64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.0 multiverse" | \
+sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+
+sudo apt update
+sudo apt install -y mongodb-org
+sudo systemctl start mongod
+
+
+(Esse fluxo é o mesmo processo mostrado em guias recentes de instalação no Ubuntu moderno)
+
+Testar:
+
+mongosh
+
+⚡ Opção MAIS fácil ainda (se só quer rodar pro curso)
+
+Use Docker — 1 comando:
+
+docker run -d -p 27017:27017 --name mongo mongo
+
+
+👉 Pronto — banco rodando.
+
+🧠 Dica de professor (pra você que tá estudando FullStack)
+
+Se continuar dando erro:
+
+✔ use Docker
+✔ ou MongoDB Atlas (nuvem — zero instalação)
+✔ ou VM Ubuntu LTS compatível
+
+Isso evita perder tempo com dependência.
+
+👉 Agora me fala uma coisa
+
+Você quer usar MongoDB para:
+
+1️⃣ Projeto Angular da faculdade
+2️⃣ Node/Express (API)
+3️⃣ Só estudar/testar local
+
+Me responde — que eu já te passo o caminho ideal pra sua situação 👍
+
+👉 Agora me fala uma coisa -------------------------- Você quer usar MongoDB para: 1️⃣ Projeto Angular da faculdade 2️⃣ Node/Express (API) 3️⃣ Só estudar/testar local Me responde — que eu já te passo o caminho ideal pra sua situação 👍
+
+Node.js do Zero a Maestria com diversos Projetos estou fazendo esse cursso pela udemy  e preciso rodar o mongodb não rodar
+
+Perfeito — agora entendi 👍
+Você está fazendo o curso Node.js do Zero a Maestria (Udemy) e precisa só rodar o MongoDB local — nada de complicação.
+
+Vou te dar o caminho mais rápido e confiável (sem dor de cabeça no Xubuntu):
+
+✅ SOLUÇÃO MAIS RÁPIDA (recomendada pra curso)
+
+👉 Rodar MongoDB com Docker — funciona em qualquer Linux
+
+1️⃣ Instalar Docker (se não tiver)
+sudo apt update
+sudo apt install -y docker.io
+sudo systemctl enable docker
+sudo systemctl start docker
+
+2️⃣ Rodar MongoDB (1 comando)
+sudo docker run -d -p 27017:27017 --name mongo mongo
+
+
+✔ Pronto — MongoDB rodando
+
+Testar:
+
+sudo docker ps
+
+
+Conectar (no Node ou terminal):
+
+mongosh mongodb://localhost:27017
+
+✅ ALTERNATIVA (sem Docker — instalação direta)
+
+Se você prefere instalar mesmo:
+
+sudo apt update
+sudo apt install -y mongodb
+sudo systemctl start mongodb
+
+
+Se der erro (muito comum no Ubuntu novo ❗)
+→ pare e use Docker — sério, é o que a maioria faz hoje.
+
+⭐ Minha recomendação pra você
+
+Como você:
+
+✔ está aprendendo Node
+✔ vai usar vários projetos
+✔ já mexe com Angular / backend
+
+👉 Use Docker
+Você não perde tempo com instalação quebrando.
+
+❓ Me confirma rapidinho
+
+Você já tem Docker instalado ou quer que eu te guie passo-a-passo agora (3 minutos pra deixar funcionando)?
+
+✅ SOLUÇÃO MAIS RÁPIDA (recomendada pra curso) ============================================= 👉 Rodar MongoDB com Docker — funciona em qualquer Linux ### 1️⃣ Instalar Docker (se não tiver) bash Copiar código `sudo apt update sudo apt install -y docker.io sudo systemctl enable docker sudo` `mongosh mongodb://localhost:27017`
+
+sudo apt update 
+sudo apt install -y docker.io
+sudo systemctl enable docker
+sudo systemctl start docker
+Atingido:1 https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.0 InRelease
+Atingido:2 http://archive.ubuntu.com/ubuntu noble InRelease                                                                                    
+Obter:3 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]                                                                    
+Atingido:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease                                 
+Atingido:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease                                 
+Atingido:6 https://packages.microsoft.com/repos/code stable InRelease                                 
+Obter:7 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1430 kB]
+Obter:8 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [232 kB]
+Obter:9 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+Obter:10 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [9836 B]
+Obter:11 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2411 kB]
+Obter:12 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [553 kB]                                                                               
+Obter:13 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]                                                                              
+Obter:14 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [74.2 kB]                                                                              
+Obter:15 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]                                                                              
+Baixados 4858 kB em 7s (676 kB/s)                                                                                                                                          
+Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... Pronto
+Lendo informação de estado... Pronto        
+8 pacotes podem ser atualizados. Execute 'apt list --upgradable' para vê-los.
+Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... Pronto
+Lendo informação de estado... Pronto        
+docker.io já é a versão mais nova (28.2.2-0ubuntu1~24.04.1).
+O seguinte pacote foi instalado automaticamente e já não é necessário:
+  libllvm19
+Utilize 'sudo apt autoremove' para o remover.
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 8 não atualizados.
+desenvolvedor-full-stack@desenvolvedor-full-stack-ThinkPad-T440p:~/Home/Cursos_Udemy/node.js_2026/Revisao_Node.js_do-Zero_a-_Maestria_com_diversos_Projetos$ sudo docker run -d -p 27017:27017 --name mongo mongo
+Unable to find image 'mongo:latest' locally
+latest: Pulling from library/mongo
+a3629ac5b9f4: Pull complete 
+c17b8d431409: Pull complete 
+916d2ce65726: Pull complete 
+0c4a440936c3: Pull complete 
+5d46608f9411: Pull complete 
+389db226dfbc: Pull complete 
+36be6857282d: Pull complete 
+2f646e1be2da: Pull complete 
+Digest: sha256:6f55a078e025aa29fea2826c82f67ff2f774b82efd816c4c30bbfe67904f0bb8
+Status: Downloaded newer image for mongo:latest
+a501f41aaca2e9da9491f9d596c367e73a906e39afd4bbd0bf8f0b5c64976dbe
+docker: Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint mongo (acffeb8774eb2f738a4a43473cd949168b005df8800e10195780eddabad483ab): failed to bind host port for 0.0.0.0:27017:172.17.0.2:27017/tcp: address already in use
+
+Run 'docker run --help' for more information
+desenvolvedor-full-stack@desenvolvedor-full-stack-ThinkPad-T440p:~/Home/Cursos_Udemy/node.js_2026/Revisao_Node.js_do-Zero_a-_Maestria_com_diversos_Projetos$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+desenvolvedor-full-stack@desenvolvedor-full-stack-ThinkPad-T440p:~/Home/Cursos_Udemy/node.js_2026/Revisao_Node.js_do-Zero_a-_Maestria_com_diversos_Projetos$ mongosh mongodb://localhost:27017
+Current Mongosh Log ID: 6983ef296cf0a72eb68ce5af
+Connecting to:          mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.6.0
+Using MongoDB:          8.0.18
+Using Mongosh:          2.6.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+------
+   The server generated these startup warnings when booting
+   2026-02-04T22:11:33.788-03:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2026-02-04T22:11:34.415-03:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2026-02-04T22:11:34.415-03:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2026-02-04T22:11:34.415-03:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2026-02-04T22:11:34.415-03:00: We suggest setting the contents of sysfsFile to 0.
+   2026-02-04T22:11:34.416-03:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+------
+
+test>  é agora ?
+
+Perfeito — agora sim 👍
+Você chegou no ponto certo 🙂
+
+👉 Isso aqui prova que o MongoDB JÁ está rodando:
+
+mongosh mongodb://localhost:27017
+Using MongoDB: 8.0.18
+test>
+
+
+Ou seja:
+
+✅ Conectou
+✅ Banco ativo
+✅ Shell funcionando
+
+💥 Você NÃO precisa fazer mais nada agora.
+
+🧠 O que aconteceu (explicação rápida)
+
+Esse erro do Docker:
+
+address already in use
+
+
+significa apenas que:
+
+👉 A porta 27017 já estava sendo usada
+👉 Provavelmente por uma instalação local do MongoDB (apt ou repo oficial)
+
+E isso se confirma porque você conseguiu conectar via:
+
+mongosh mongodb://localhost:27017
+
+
+Então:
+
+✔ Mongo local funcionando
+❌ Docker não necessário neste momento
+
+✅ Próximo passo (para o curso Node)
+
+Agora você já pode usar normalmente no projeto:
+
+String de conexão padrão
+
+No Node/Mongoose:
+
+mongoose.connect("mongodb://127.0.0.1:27017/test")
+
+
+ou
+
+mongoose.connect("mongodb://localhost:27017/meubanco")
+
+🧪 Teste rápido (opcional)
+
+Dentro do mongosh digite:
+
+show dbs
+use curso
+db.alunos.insertOne({nome:"Andre"})
+db.alunos.find()
+
+
+Se aparecer → tudo perfeito.
+
+⭐ Pergunta rápida (importante)
+
+Você quer:
+
+1️⃣ Só usar o Mongo local para o curso (mais simples)
+2️⃣ Parar o local e usar Docker (ambiente profissional)
+3️⃣ Aprender a usar ambos
+
+Me fala que eu te guio no próximo passo 🙂
